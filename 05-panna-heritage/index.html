@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Panna Heritage · Saree storefront template</title>
+<meta name="description" content="Emerald Heritage homepage template for an Indian saree store: Traditional craftsmanship meets modern luxury.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&text=%E2%82%B9&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:#F7F2E6;font:14px system-ui,sans-serif}
+.cq{container:mk / inline-size;max-width:1680px;margin:0 auto}
+.mk a{cursor:pointer}
+.mk .st .fab{position:fixed;top:auto;bottom:20px;right:20px}
+.tpl{display:flex;justify-content:center;align-items:center;gap:6px 16px;flex-wrap:wrap;padding:7px 16px;background:#141413;color:#D8D5CE;font:500 12px/1.45 system-ui,'Segoe UI',sans-serif;text-align:center}
+.tpl b{color:#fff;font-weight:600}
+.tpl a{color:#fff;text-underline-offset:2px}
+@media (max-width:640px){.tpl .long{display:none}.tpl{gap:4px 12px;padding:6px 12px}}
+.tpl select{font:inherit;color:#fff;background:#2A2927;border:1px solid #444;border-radius:4px;padding:2px 6px}
+
+.mk,.mk *{box-sizing:border-box;margin:0;padding:0}
+.mk{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow:hidden}
+.mk a{color:inherit;text-decoration:none}
+.mk ul,.mk ol{list-style:none}
+.mk button{font:inherit;color:inherit;background:none;border:0}
+.mk .ph{display:block;width:100%;background-size:cover;background-position:50% 100%;background-repeat:no-repeat}
+.mk .ic{width:20px;height:20px;display:block;flex:none}
+.mk h1,.mk h2,.mk h3,.mk h4,.mk h5{font-weight:inherit;font-size:inherit;text-wrap:balance}
+.mk em{font-style:italic}
+.mk s{opacity:.62}
+@container mk (min-width: 960px){ .mk .mob{display:none!important} }
+@container mk (max-width: 959px){ .mk .dsk{display:none!important} }
+
+.st{position:relative;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--fb)}
+.st .ann{display:flex;justify-content:center;gap:40px;padding:9px 24px;background:var(--ann-bg);color:var(--ann-fg);font-size:12.5px;letter-spacing:.02em;text-align:center}
+.st .hd{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:18px 48px;background:var(--hd-bg,var(--bg));color:var(--hd-fg,var(--ink))}
+.st .srch{display:flex;align-items:center;justify-content:space-between;gap:12px;width:360px;height:46px;padding:0 18px 0 22px;border:1.5px solid var(--srch-bd);border-radius:var(--r-srch,999px);background:var(--srch-bg,transparent);color:var(--mu);font-size:15px}
+.st .srch b{font-weight:400;color:var(--ink)}
+.st .srch u{display:inline-block;width:1.5px;height:18px;background:var(--ink);vertical-align:-3px;margin-left:1px}
+.st .srch-i{width:22px;height:22px;color:var(--srch-ic,var(--ink))}
+.st .drop{position:absolute;left:48px;top:70px;width:360px;z-index:3;background:var(--card-bg,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -18px rgba(0,0,0,.35);padding:8px;font-size:14px}
+.st .logo{justify-self:center;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.st .hd-ic{justify-self:end;display:flex;align-items:center;gap:24px}
+.st .ib{position:relative;display:block}
+.st .ib .ic{width:26px;height:26px}
+.st .ib i{position:absolute;top:-7px;right:-9px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--cnt-bg);color:var(--cnt-fg);font:700 10.5px/18px var(--fb);font-style:normal;text-align:center}
+.st .hd-m .ic{width:26px;height:26px}
+.st .cat{display:flex;justify-content:center;flex-wrap:nowrap;gap:32px;padding:18px 40px 15px;background:var(--nav-bg,var(--bg));color:var(--nav-fg,var(--ink));border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:15.5px;font-weight:500}
+.st .cat a{position:relative;white-space:nowrap}
+.st .cat .tg{position:absolute;left:50%;top:-15px;transform:translateX(-50%);padding:2px 6px;border-radius:3px;background:var(--tag1-bg);color:var(--tag1-fg);font:700 9px/1.25 var(--fb);letter-spacing:.06em}
+.st .cat .tg.t2{background:var(--tag2-bg);color:var(--tag2-fg)}
+.st .usp{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:26px 48px;background:var(--usp-bg,transparent);color:var(--usp-fg,var(--ink));border-bottom:1px solid var(--usp-line,transparent)}
+.st .usp-i{display:flex;align-items:center;gap:14px;justify-content:center}
+.st .usp-i .ic{width:30px;height:30px;color:var(--usp-ic,var(--pri))}
+.st .usp-i b{display:block;font-weight:600;font-size:14.5px;line-height:1.3}
+.st .usp-i span{display:block;font-size:12.5px;color:var(--usp-mu,var(--mu))}
+.st .sec{padding:72px 48px 0}
+.st .sh{text-align:center;margin-bottom:34px}
+.st .sh h2{font-family:var(--fh);font-size:36px;line-height:1.15;color:var(--sh-c,var(--ink))}
+.st .sh p{color:var(--mu);margin-top:8px;font-size:15px}
+.st .tabs{display:flex;justify-content:center;gap:10px;margin-top:20px}
+.st .tabs span{padding:8px 18px;border:1px solid var(--line);border-radius:var(--r-pill,999px);font-size:14px;color:var(--mu)}
+.st .tabs span.on{background:var(--btn);border-color:var(--btn);color:var(--btn-fg)}
+.st .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px}
+.st .pc{display:flex;flex-direction:column;background:var(--card-bg,transparent);border:var(--card-bd,0);border-radius:var(--r-card,0);overflow:hidden;box-shadow:var(--card-sh,none)}
+.st .pc-im{position:relative;overflow:hidden;border-radius:var(--r-img,0)}
+.st .pc-im .ph{aspect-ratio:var(--ratio,3/4)}
+.st .pc-off{position:absolute;top:12px;left:12px;padding:6px 9px;border-radius:var(--r-off,6px);background:var(--off-bg);color:var(--off-fg);font:700 12.5px/1 var(--fb);letter-spacing:.02em}
+.st .pc-wl{position:absolute;top:10px;right:10px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--wl-bg,rgba(255,255,255,.92));color:var(--wl-fg,var(--ink))}
+.st .pc-wl.on{color:var(--sale)}
+.st .pc-wl.on .ic{fill:currentColor}
+.st .pc-qa{position:absolute;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:center;height:42px;border-radius:var(--r-btn,0);background:var(--btn);color:var(--btn-fg);font:600 13px/1 var(--fb);letter-spacing:.04em;opacity:0;transform:translateY(8px)}
+.st .pc:hover .pc-qa{opacity:1;transform:none}
+.st .pc-tk{overflow:hidden;white-space:nowrap;background:var(--tk-bg);color:var(--tk-fg);font:700 11.5px/1 var(--fb);letter-spacing:.06em;text-transform:uppercase;padding:8px 0}
+.st .tk-in{display:inline-flex;animation:tk 16s linear infinite}
+.st .pc-tk span{display:inline-flex;align-items:center;gap:7px;padding:0 14px}
+.st .pc-tk i{font-style:normal;color:var(--tk-ic,inherit)}
+@keyframes tk{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.st .tk-in{animation:none}}
+.st .pc-bd{padding:14px 14px 18px;text-align:var(--align,center)}
+.st .pc-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:var(--nm-w,400) var(--nm-s,17px)/1.35 var(--nm-f,var(--fb));color:var(--ink)}
+.st .pc-rt{display:flex;align-items:center;justify-content:var(--jc,center);gap:6px;margin-top:6px;font-size:13.5px;color:var(--mu)}
+.st .stars{position:relative;display:inline-block;color:var(--star-off,#D9D4CC);font-size:16px;letter-spacing:1.5px;line-height:1;font-family:system-ui,'Segoe UI Symbol',sans-serif}
+.st .stars::before{content:"★★★★★";position:absolute;inset:0;width:calc(var(--v) / 5 * 100%);overflow:hidden;color:var(--star)}
+.st .pc-pr{display:flex;align-items:baseline;justify-content:var(--jc,center);gap:10px;margin-top:8px;flex-wrap:wrap}
+.st .pc-pr b{font-weight:700;font-size:17.5px;color:var(--sale)}
+.st .pc-pr s{font-size:14px;color:var(--mu)}
+.st .pc-pr em{font-style:normal;font-size:13px;font-weight:600;color:var(--pct,var(--sale))}
+.st .pc-more{justify-content:center;align-items:center;gap:10px;text-align:center;padding:24px;background:var(--more-bg,var(--btn));color:var(--more-fg,var(--btn-fg));border:0;box-shadow:none}
+.st .pm-n{font:400 64px/1 var(--fh)}
+.st .pm-t{font-size:15px;line-height:1.4;max-width:180px;opacity:.9}
+.st .pm-a{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding-bottom:3px;border-bottom:1px solid currentColor;font-weight:600;font-size:14px}
+.st .pm-a .ic{width:16px;height:16px}
+.st .more-b{display:table;margin:36px auto 0;padding:14px 32px;border:1.5px solid var(--btn);border-radius:var(--r-btn,0);color:var(--btn);font:600 14px/1 var(--fb);letter-spacing:.04em}
+.st .ft{margin-top:88px;padding:64px 48px 28px;background:var(--ft-bg);color:var(--ft-fg)}
+.st .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.25fr;gap:40px}
+.st .ft-logo{justify-self:start;margin-bottom:16px}
+.st .ft-br p{font-size:14px;line-height:1.65;color:var(--ft-mu);max-width:300px}
+.st .soc{display:flex;gap:10px;margin-top:18px}
+.st .soc span{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--ft-line)}
+.st .soc .ic{width:18px;height:18px}
+.st .ft h4{font:700 13px/1.3 var(--fb);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;color:var(--ft-h,var(--ft-fg))}
+.st .ft li{font-size:14px;line-height:2.05;color:var(--ft-mu)}
+.st .ft-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:48px;padding-top:22px;border-top:1px solid var(--ft-line);font-size:12.5px;color:var(--ft-mu)}
+.st .pay{display:flex;gap:6px}
+.st .pay i{font-style:normal;font-size:11px;font-weight:600;padding:5px 8px;border-radius:4px;border:1px solid var(--ft-line);color:var(--ft-fg)}
+.st .fab{position:absolute;right:22px;top:700px;display:grid;gap:12px;z-index:4}
+.st .fab span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px -8px rgba(0,0,0,.4)}
+.st .fab .ic{width:24px;height:24px}
+.st .fab-c{background:var(--fab-bg,var(--btn));color:var(--fab-fg,var(--btn-fg))}
+.st .fab-t{background:#fff;color:#1d1d1d}
+
+@container mk (max-width: 959px){
+  .st{font-size:14px}
+  .st .ann{font-size:11px;padding:8px 12px}
+  .st .ann .x{display:none}
+  .st .hd{grid-template-columns:auto 1fr auto;gap:12px;padding:12px 16px}
+  .st .hd .logo{justify-self:start}
+  .st .hd-ic{gap:18px}
+  .st .ib .ic,.st .hd-m .ic{width:24px;height:24px}
+  .st .msrch{width:auto;height:42px;margin:0 16px 12px;font-size:14px}
+  .st .cat{justify-content:flex-start;gap:8px;overflow:hidden;padding:16px 16px 12px;font-size:13px}
+  .st .cat a{padding:7px 13px;border:1px solid var(--line);border-radius:999px}
+  .st .cat .tg{top:-9px;font-size:8px;padding:1px 5px}
+  .st .usp{grid-template-columns:1fr 1fr;gap:14px 10px;padding:18px 16px}
+  .st .usp-i{justify-content:flex-start;gap:10px}
+  .st .usp-i .ic{width:24px;height:24px}
+  .st .usp-i b{font-size:13px}
+  .st .usp-i span{font-size:11.5px}
+  .st .sec{padding:44px 16px 0}
+  .st .sh{margin-bottom:20px}
+  .st .sh h2{font-size:26px}
+  .st .sh p{font-size:13.5px}
+  .st .tabs{justify-content:flex-start;overflow:hidden;gap:8px}
+  .st .tabs span{padding:7px 14px;font-size:13px;white-space:nowrap}
+  .st .grid{grid-template-columns:1fr 1fr;gap:14px 12px}
+  .st .pc-off{top:8px;left:8px;font-size:11px;padding:5px 7px}
+  .st .pc-wl{top:6px;right:6px;width:30px;height:30px}
+  .st .pc-wl .ic{width:17px;height:17px}
+  .st .pc-tk{font-size:9.5px;padding:6px 0}
+  .st .pc-bd{padding:10px 8px 12px}
+  .st .pc-nm{font-size:13.5px}
+  .st .pc-rt{font-size:12px;gap:4px}
+  .st .stars{font-size:13px;letter-spacing:.5px}
+  .st .pc-pr{gap:6px}
+  .st .pc-pr b{font-size:15px}
+  .st .pc-pr s{font-size:12px}
+  .st .pc-pr em{font-size:11.5px}
+  .st .pc-qa{display:none}
+  .st .more-b{margin-top:24px;width:100%;text-align:center}
+  .st .ft{margin-top:56px;padding:40px 16px 96px}
+  .st .ft-top{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .st .ft-br{grid-column:1/-1}
+  .st .ft-bot{flex-direction:column;align-items:flex-start;gap:14px}
+  .st .pay{flex-wrap:wrap}
+  .st .pm-n{font-size:40px}.st .pm-t{font-size:12.5px}.st .pc-more{padding:14px}
+  .st .fab{right:14px;top:520px}
+  .st .fab span{width:46px;height:46px}
+}
+
+.m05{--bg:#F7F2E6;--ink:#1C2A24;--mu:#4F5E55;--line:#DCCFAE;--pri:#0E4D3E;--fb:'Alegreya Sans',system-ui,sans-serif;--fh:'Marcellus',Georgia,serif;
+--ann-bg:#0A3A2F;--ann-fg:#D9BD7A;--hd-bg:#F7F2E6;--srch-bd:#0E4D3E;--srch-bg:#FFFCF4;--srch-ic:#0E4D3E;--cnt-bg:#B89548;--cnt-fg:#0A3A2F;
+--nav-bg:#F7F2E6;--nav-fg:#0E4D3E;--tag1-bg:#B89548;--tag1-fg:#0A3A2F;--tag2-bg:#0E4D3E;--tag2-fg:#F7F2E6;
+--card-bg:transparent;--r-img:999px 999px 0 0;--off-bg:#B89548;--off-fg:#0A3A2F;--r-off:10px 10px 0 0;--wl-bg:#FFFCF4;--wl-fg:#0E4D3E;
+--tk-bg:#0E4D3E;--tk-fg:#EAD9A8;--tk-ic:#D9BD7A;--nm-f:'Marcellus',serif;--nm-s:17.5px;--nm-w:400;--star:#B89548;--star-off:#E2D7BC;--sale:#0E4D3E;
+--btn:#0E4D3E;--btn-fg:#F7F2E6;--r-btn:2px;--ft-bg:#0A3A2F;--ft-fg:#F1EAD8;--ft-mu:#B9C7BD;--ft-line:rgba(217,189,122,.28);--ft-h:#D9BD7A;--fab-bg:#0E4D3E}
+.m05 .ann{font-size:12.5px;letter-spacing:.06em}
+.m05 .ann .x:last-child{text-decoration:underline;text-underline-offset:3px}
+.m05 .ai{width:22px;height:28px}
+.m05 .lg{display:flex;flex-direction:column;align-items:center;gap:6px}
+.m05 .lg b{font:400 34px/1 'Marcellus',serif;letter-spacing:.28em;padding-left:.28em;color:#0E4D3E}
+.m05 .srch{border-width:1px;border-radius:2px}
+.m05 .cat{font-size:16px;gap:34px;border-color:#DCCFAE}
+.m05 .cat a:first-child{border-bottom:2px solid #B89548;padding-bottom:4px}
+.m05 .fh{position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:end;padding:56px 96px 150px 72px;background:#0E4D3E}
+.m05 .fh::before{content:"";position:absolute;right:-120px;top:-60px;width:620px;height:760px;border:1px solid rgba(217,189,122,.25);border-radius:999px 999px 0 0}
+.m05 .fh-t{position:relative;z-index:1;color:#F7F2E6;padding-bottom:24px}
+.m05 .fh-w{position:relative;justify-self:center;width:400px;padding:12px;border:1px solid #B89548;border-radius:999px 999px 0 0}
+.m05 .pc-more{--more-bg:#0E4D3E;--more-fg:#F7F2E6;border-radius:999px 999px 0 0}
+.m05 .pm-n{color:#D9BD7A}
+.m05 .eb{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#D9BD7A}
+.m05 .fh h1{font:400 58px/1.1 'Marcellus',serif;margin-top:18px}
+.m05 .sub{font-size:18px;line-height:1.6;color:#D6E0D8;margin-top:18px;max-width:500px}
+.m05 .ctas{display:flex;gap:14px;margin-top:30px}
+.m05 .b1,.m05 .b2,.m05 .b3{display:inline-flex;align-items:center;height:52px;padding:0 28px;border-radius:2px;font-weight:700;font-size:15px;letter-spacing:.06em}
+.m05 .b1{background:#F7F2E6;color:#0E4D3E}
+.m05 .b2{border:1px solid #D9BD7A;color:#F7F2E6}
+.m05 .dots{display:flex;gap:8px;margin-top:40px}
+.m05 .dots i{width:22px;height:2px;background:rgba(247,242,230,.35)}
+.m05 .dots i.on{background:#D9BD7A}
+.m05 .fc{position:relative;z-index:2;margin-top:-120px;padding:0 120px}
+.m05 .fc-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.m05 .fc a{background:#FFFCF4;padding:14px 14px 18px;text-align:center;box-shadow:0 22px 40px -22px rgba(10,58,47,.5)}
+.m05 .ar{overflow:hidden;border-radius:999px 999px 0 0}
+.m05 .ar-i{aspect-ratio:3/4}
+.m05 .fc b{display:block;font:400 21px/1.2 'Marcellus',serif;margin-top:14px;color:#0E4D3E}
+.m05 .fc span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8C6F2E}
+.m05 .ub{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:64px 0 0;padding:28px 48px;background:#0E4D3E;color:#F7F2E6}
+.m05 .ub div{display:flex;gap:14px;align-items:center;justify-content:center}
+.m05 .ub .ic{width:32px;height:32px;color:#D9BD7A}
+.m05 .ub b{display:block;font:400 17px/1.2 'Marcellus',serif}
+.m05 .ub span{font-size:13px;color:#C9D6CC}
+.m05 .sec{padding:84px 48px 0}
+.m05 .sh .ai{display:block;margin:0 auto 12px;width:24px;height:30px}
+.m05 .sh h2{font:400 40px/1.1 'Marcellus',serif;color:#0E4D3E}
+.m05 .tabs span{border-radius:2px;border-color:#DCCFAE}
+.m05 .tabs span.on{background:#0E4D3E;border-color:#0E4D3E}
+.m05 .pc-off{top:auto;bottom:12px;left:12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.m05 .pc-wl{top:auto;bottom:10px}
+.m05 .pc-tk{font-size:11px;letter-spacing:.14em}
+.m05 .pc-nm::after{content:"";display:block;width:28px;height:1px;background:#B89548;margin:9px auto 0}
+.m05 .pc-pr b{font-size:18px}
+.m05 .more-b{border-radius:2px}
+.m05 .km{margin-top:96px;padding:44px 48px;background:#0E4D3E}
+.m05 .km-in{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center;padding:56px 72px;border:1px solid #B89548;outline:1px solid rgba(185,149,72,.45);outline-offset:-10px;color:#F7F2E6}
+.m05 .km h2{font:400 50px/1.08 'Marcellus',serif;margin-top:14px}
+.m05 .km .big{font:400 26px/1.35 'Marcellus',serif;color:#EAD9A8;margin-top:16px}
+.m05 .km-t > p:not(.eb):not(.big){font-size:16.5px;color:#C9D6CC;margin:14px 0 28px}
+.m05 .b3{background:#B89548;color:#0A3A2F}
+.m05 .km-i{max-width:340px;justify-self:center;width:100%;border:1px solid #B89548;padding:10px;border-radius:999px 999px 0 0}
+.m05 .km-i .ar-i{border-radius:999px 999px 0 0}
+.m05 .hs-g{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center}
+.m05 .hs-g .ar{width:72%;margin:0 auto}
+.m05 .rn{display:block;font:400 20px/1 'Marcellus',serif;color:#8C6F2E;margin-top:18px}
+.m05 .hs-g h3{font:400 24px/1.2 'Marcellus',serif;margin-top:10px;color:#0E4D3E}
+.m05 .hs-g p{font-size:16px;color:#4F5E55;margin-top:8px;max-width:320px;margin-inline:auto}
+.m05 .rv-in{display:grid;grid-template-columns:300px 1fr;gap:56px;padding:48px 56px;background:#EDE4CF}
+.m05 .rv-s{text-align:center;padding-right:48px;border-right:1px solid #DCCFAE}
+.m05 .rv-s > b{display:block;font:400 72px/1 'Marcellus',serif;color:#0E4D3E}
+.m05 .rv-s .stars{font-size:20px;margin-top:10px}
+.m05 .rv-s p{margin-top:8px;color:#4F5E55}
+.m05 .rv-s span{display:block;margin-top:16px;font-size:13px;color:#8C6F2E}
+.m05 .rv-q{display:grid;gap:28px}
+.m05 .rq{display:flex;gap:18px}
+.m05 .av{flex:none;width:56px;height:70px;border-radius:999px 999px 0 0;display:grid;place-items:center;background:#0E4D3E;color:#EAD9A8;font:400 18px 'Marcellus',serif}
+.m05 .rq p{font:400 19px/1.5 'Marcellus',serif;color:#1C2A24}
+.m05 .rq b{display:block;margin-top:10px;font-weight:700}
+.m05 .rq span{font-size:13.5px;color:#4F5E55}
+.m05 .nl{margin:84px 48px 0;padding:56px;text-align:center;border-top:1px solid #DCCFAE}
+.m05 .nl .ai{width:24px;height:30px;margin:0 auto}
+.m05 .nl h3{font:400 36px/1.1 'Marcellus',serif;color:#0E4D3E;margin-top:12px}
+.m05 .nl p{color:#4F5E55;margin-top:8px;max-width:520px;margin-inline:auto}
+.m05 .nl form{display:flex;width:520px;margin:24px auto 0;border:1px solid #0E4D3E;border-radius:2px;background:#FFFCF4}
+.m05 .nl form span{flex:1;text-align:left;padding:15px 18px;color:#4F5E55}
+.m05 .nl form b{display:grid;place-items:center;padding:0 30px;background:#0E4D3E;color:#F7F2E6;letter-spacing:.06em}
+.m05 .ft .lg b{color:#F1EAD8}.m05 .ft .lg{align-items:flex-start}
+@container mk (max-width: 959px){
+  .m05 .lg .ai{display:none}.m05 .lg b{font-size:26px;letter-spacing:.2em}.m05 .lg{align-items:flex-start}
+  .m05 .cat{font-size:13.5px}.m05 .cat a:first-child{padding-bottom:7px}
+  .m05 .fh{grid-template-columns:1fr;gap:24px;padding:24px 20px 150px}
+  .m05 .fh-w{order:-1;width:78%;padding:8px}.m05 .fh::before{display:none}
+  
+  .m05 .fh-t{padding-bottom:0}
+  .m05 .fh h1{font-size:33px}.m05 .sub{font-size:14.5px}
+  .m05 .ctas{flex-direction:column;gap:10px}.m05 .b1,.m05 .b2{justify-content:center;height:48px}
+  .m05 .dots{margin-top:20px}
+  .m05 .fc{margin-top:-120px;padding:0 0 0 16px}
+  .m05 .fc-g{display:flex;gap:12px;overflow:hidden}.m05 .fc a{flex:none;width:42%;padding:8px 8px 12px}.m05 .fc b{font-size:16px}
+  .m05 .ub{grid-template-columns:1fr 1fr;gap:16px 10px;padding:20px 16px;margin-top:40px}.m05 .ub div{justify-content:flex-start;gap:10px}.m05 .ub b{font-size:14px}.m05 .ub span{font-size:11.5px}.m05 .ub .ic{width:24px;height:24px}
+  .m05 .sec{padding:56px 16px 0}.m05 .sh h2{font-size:30px}
+  .m05 .km{padding:16px;margin-top:56px}.m05 .km-in{grid-template-columns:1fr;padding:32px 20px;gap:28px}.m05 .km h2{font-size:34px}.m05 .km .big{font-size:20px}
+  .m05 .hs-g{grid-template-columns:1fr;gap:36px}
+  .m05 .rv-in{grid-template-columns:1fr;padding:28px 20px;gap:24px}.m05 .rv-s{border-right:0;padding:0 0 20px;border-bottom:1px solid #DCCFAE}.m05 .rq p{font-size:16px}
+  .m05 .nl{margin:56px 16px 0;padding:40px 0}.m05 .nl h3{font-size:28px}.m05 .nl form{width:auto;flex-direction:column}.m05 .nl form b{padding:14px}
+}
+@container mk (min-width: 641px) and (max-width: 959px){
+.mk .st .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.m01 .hm{max-width:620px;margin-inline:auto}.m01 .sto-i{max-width:480px}
+.m02 .tri .fr.c{width:52%}.m02 .ap-i{max-width:480px;margin-inline:auto}
+.m03 .hx-v{max-width:560px;margin-inline:auto}.m03 .nd-v{max-width:520px}
+.m04 .sp-i{aspect-ratio:5/4}.m04 .fd-i{max-width:480px}
+.m05 .fh-w{width:52%}
+.m06 .hl-i{aspect-ratio:4/3}.m06 .mw-i{max-width:520px}
+.m07 .hb-b{aspect-ratio:4/3}
+.m08 .cover{width:60%;justify-self:center}.m08 .sp-i{aspect-ratio:4/3}
+.m09 .hc-i{aspect-ratio:4/3}.m09 .sl-i{max-width:520px}
+.m10 .sp-f{width:56%;justify-self:center}.m10 .hs-i{max-width:520px}
+}
+.i-ph-p4{background-image:url("../assets/photos/p4.webp")}
+.i-ph-p7{background-image:url("../assets/photos/p7.webp")}
+.i-ph-p5{background-image:url("../assets/photos/p5.webp")}
+.i-ph-p1{background-image:url("../assets/photos/p1.webp")}
+.i-ph-p3{background-image:url("../assets/photos/p3.webp")}
+.i-ph-p6{background-image:url("../assets/photos/p6.webp")}
+.i-ph-p2{background-image:url("../assets/photos/p2.webp")}
+</style>
+</head>
+<body>
+<div class="tpl"><span>Template preview: <b>05 Panna Heritage</b><span class="long"> (Emerald Heritage). The brand, prices, offers and reviews are samples.</span></span><a href="../">All 10 templates</a><a href="../directions.html#c05">Design spec</a><label>Switch: <select id="sw" aria-label="Switch template"><option value="">Panna Heritage</option><option value="../01-the-quiet-drape/">01 The Quiet Drape</option><option value="../02-darbar/">02 Darbar</option><option value="../03-mitti-modern/">03 Mitti Modern</option><option value="../04-gulabi-hour/">04 Gulabi Hour</option><option value="../06-neel-and-kora/">06 Neel &amp; Kora</option><option value="../07-utsav/">07 Utsav</option><option value="../08-the-jamun-issue/">08 The Jamun Issue</option><option value="../09-tulsi-garden/">09 Tulsi Garden</option><option value="../10-midnight-zari/">10 Midnight Zari</option></select></label></div>
+<div class="cq"><div class="mk m05"><div class="st">
+<div class="ann"><span>Silk Mark certified pure silks</span><span class="x">Free insured shipping across India</span><span class="x">Track order · Help</span></div>
+<header class="hd"><button class="hd-m mob" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="srch dsk"><span class="srch-t">Search Kanjivaram, Banarasi, colours…</span><svg class="ic srch-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></div>
+<a class="logo"><span class="lg"><svg class="ai" viewBox="0 0 24 30" aria-hidden="true"><path d="M2 29V12Q2 3 12 1Q22 3 22 12V29" fill="none" stroke="#B89548" stroke-width="1.4"/><path d="M7 29V14Q7 8 12 6.5Q17 8 17 14V29" fill="none" stroke="#B89548" stroke-width="1"/></svg><b>TAANA</b></span></a>
+<div class="hd-ic"><a class="ib dsk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20a7.2 7.2 0 0 1 14.4 0"/></svg></a><a class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg><i>1</i></a><a class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8.5h13l-1 11.5h-11z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg><i>1</i></a></div></header>
+<div class="srch mob msrch"><span class="srch-t">Search Kanjivaram, Banarasi, colours…</span><svg class="ic srch-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></div>
+<nav class="cat"><a>New on the Loom<span class="tg">NEW</span></a><a>Kanjivaram</a><a>Banarasi</a><a>Soft Silk</a><a>Tissue</a><a>Bridal Silk<span class="tg t2">SILK MARK</span></a><a>Festive</a><a>Heritage</a></nav>
+<section class="fh"><div class="fh-t"><p class="eb">Kanjivaram · Banarasi · Soft Silk</p><h1>The Weave Your Grandmother Would Recognise</h1><p class="sub">Pure silk Kanjivarams and Banarasis, woven on traditional looms and certified for real silk and real zari.</p><div class="ctas"><a class="b1">Shop Silk Sarees</a><a class="b2">Our Weaving Heritage</a></div><div class="dots"><i class="on"></i><i></i><i></i></div></div><div class="fh-w"><div class="ar"><div class="ph i-ph-p4 ar-i" style="background-position:50% 22%"></div></div></div></section>
+
+<section class="fc"><div class="fc-g"><a><div class="ar"><div class="ph i-ph-p5 ar-i" style="background-position:50% 14%"></div></div><b>Kanjivaram</b><span>Explore</span></a><a><div class="ar"><div class="ph i-ph-p1 ar-i" style="background-position:50% 38%"></div></div><b>Banarasi</b><span>Explore</span></a><a><div class="ar"><div class="ph i-ph-p3 ar-i" style="background-position:50% 30%"></div></div><b>Soft Silk</b><span>Explore</span></a><a><div class="ar"><div class="ph i-ph-p7 ar-i" style="background-position:42% 58%"></div></div><b>Tissue</b><span>Explore</span></a></div></section>
+<div class="ub"><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.5" r="5.8"/><path d="M8.8 14.3L7.5 20.5l4.5-2 4.5 2-1.3-6.2"/><path d="M9.6 9.6l1.7 1.7 3.2-3.4"/></svg><p><b>Silk Mark certified</b><span>Verifiable tag on every pure silk</span></p></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M8.5 4v16M15.5 4v16"/><path d="M8.5 8h7M8.5 11h7M8.5 14h7M8.5 17h7"/></svg><p><b>Real zari</b><span>Silver threads dipped in gold</span></p></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17" r="1.7"/><circle cx="17" cy="17" r="1.7"/></svg><p><b>Free insured shipping</b><span>Across India in 3–6 days</span></p></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3.5-3.5M20 16H7l3.5 3.5"/></svg><p><b>Exchange in 7 days</b><span>Free pickup</span></p></div></div>
+<section class="sec g-new"><div class="sh"><svg class="ai" viewBox="0 0 24 30" aria-hidden="true"><path d="M2 29V12Q2 3 12 1Q22 3 22 12V29" fill="none" stroke="#B89548" stroke-width="1.4"/><path d="M7 29V14Q7 8 12 6.5Q17 8 17 14V29" fill="none" stroke="#B89548" stroke-width="1"/></svg><h2>New on the Loom</h2><p>Fresh from Kanchipuram and Varanasi</p><div class="tabs"><span class="on">All</span><span class="">Bridal</span><span class="">Festive</span><span class="">Daily Silk</span></div></div>
+<div class="grid"><a class="pc"><div class="pc-im"><div class="ph i-ph-p5" style="background-position:50% 10%"></div><span class="pc-off pc-lab">Silk Mark</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Kanjivaram, Annam Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(31)</span></p>
+<p class="pc-pr"><b>₹38,750</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p4" style="background-position:50% 22%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Wine Kanjivaram, Gold Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(27)</span></p>
+<p class="pc-pr"><b>₹32,000</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p3" style="background-position:50% 35%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Peacock Teal Silk, Silver Zari</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(44)</span></p>
+<p class="pc-pr"><b>₹28,500</b><s>₹31,700</s></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p1" style="background-position:50% 45%"></div><span class="pc-off pc-lab">New</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Rani Pink Banarasi, Zari Jaal</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(19)</span></p>
+<p class="pc-pr"><b>₹26,900</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p2" style="background-position:50% 40%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Sindoor Banarasi Katan</p><p class="pc-rt"><span class="stars" style="--v:4.7" role="img" aria-label="Rated 4.7 out of 5">★★★★★</span><span>(22)</span></p>
+<p class="pc-pr"><b>₹29,400</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p7" style="background-position:44% 62%"></div><span class="pc-off pc-lab">Bridal</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Lilac Tissue, Embroidered Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(12)</span></p>
+<p class="pc-pr"><b>₹34,800</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p6" style="background-position:40% 50%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Silk, Temple Border</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(25)</span></p>
+<p class="pc-pr"><b>₹22,500</b></p></div></a><a class="pc pc-more"><span class="pm-n">60</span><span class="pm-t">silks fresh from the loom</span><span class="pm-a">View all <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg></span></a></div><a class="more-b">View all silk sarees</a></section>
+<section class="km"><div class="km-in"><div class="km-t"><p class="eb">This month</p><h2>Kanjivaram Month</h2><p class="big">Complimentary blouse stitching on every pure silk Kanjivaram.</p><p>Stitched to your measurements by our master tailors and ready in 10 days.</p><a class="b3">Shop Kanjivaram</a></div><div class="ar km-i"><div class="ph i-ph-p5 ar-i" style="background-position:50% 14%"></div></div></div></section>
+<section class="sec g-best"><div class="sh"><svg class="ai" viewBox="0 0 24 30" aria-hidden="true"><path d="M2 29V12Q2 3 12 1Q22 3 22 12V29" fill="none" stroke="#B89548" stroke-width="1.4"/><path d="M7 29V14Q7 8 12 6.5Q17 8 17 14V29" fill="none" stroke="#B89548" stroke-width="1"/></svg><h2>Heirloom Picks</h2><p>The sarees families come back for</p></div>
+<div class="grid"><a class="pc"><div class="pc-im"><div class="ph i-ph-p4" style="background-position:50% 22%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Wine Kanjivaram, Gold Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(27)</span></p>
+<p class="pc-pr"><b>₹32,000</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p5" style="background-position:50% 10%"></div><span class="pc-off pc-lab">Silk Mark</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Kanjivaram, Annam Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(31)</span></p>
+<p class="pc-pr"><b>₹38,750</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p1" style="background-position:50% 45%"></div><span class="pc-off pc-lab">New</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Rani Pink Banarasi, Zari Jaal</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(19)</span></p>
+<p class="pc-pr"><b>₹26,900</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p3" style="background-position:50% 35%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Silk Mark certified pure silk"><div class="tk-in"><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span><span><i>✦</i>Silk Mark certified pure silk</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Peacock Teal Silk, Silver Zari</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(44)</span></p>
+<p class="pc-pr"><b>₹28,500</b><s>₹31,700</s></p></div></a></div></section>
+<section class="sec hs"><div class="sh"><svg class="ai" viewBox="0 0 24 30" aria-hidden="true"><path d="M2 29V12Q2 3 12 1Q22 3 22 12V29" fill="none" stroke="#B89548" stroke-width="1.4"/><path d="M7 29V14Q7 8 12 6.5Q17 8 17 14V29" fill="none" stroke="#B89548" stroke-width="1"/></svg><h2>From Mulberry to Masterpiece</h2><p>How a true Kanjivaram comes to be</p></div><div class="hs-g"><div><div class="ar"><div class="ph i-ph-p3 ar-i" style="background-position:50% 62%;background-size:210%"></div></div><span class="rn">I</span><h3>Pure Mulberry Silk</h3><p>Thick, lustrous yarn from Karnataka silk farms, dyed in small batches before weaving.</p></div><div><div class="ar"><div class="ph i-ph-p6 ar-i" style="background-position:74% 90%;background-size:240%"></div></div><span class="rn">II</span><h3>Real Zari</h3><p>Silver threads coated in gold, woven by hand into borders and pallus.</p></div><div><div class="ar"><div class="ph i-ph-p5 ar-i" style="background-position:62% 32%;background-size:230%"></div></div><span class="rn">III</span><h3>The Korvai Join</h3><p>Body and border woven separately, then interlocked by hand. It is the mark of a true Kanjivaram.</p></div></div></section>
+<section class="sec rv"><div class="rv-in"><div class="rv-s"><b>4.9</b><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><p>from 1,860 reviews</p><span>Every review is from a verified buyer</span></div><div class="rv-q"><div class="rq"><span class="av">MS</span><div><p>“My grandmother held the pallu up to the window and said, this is how they used to weave. That was all the review I needed.”</p><b>Meenakshi Sundaram</b><span>Madurai · Verified buyer</span></div></div><div class="rq"><span class="av">LK</span><div><p>“The korvai join is perfect and the Silk Mark tag was on it. Worth every rupee for my daughter's wedding.”</p><b>Latha Krishnan</b><span>Bengaluru · Verified buyer</span></div></div></div></div></section>
+<section class="nl"><svg class="ai" viewBox="0 0 24 30" aria-hidden="true"><path d="M2 29V12Q2 3 12 1Q22 3 22 12V29" fill="none" stroke="#B89548" stroke-width="1.4"/><path d="M7 29V14Q7 8 12 6.5Q17 8 17 14V29" fill="none" stroke="#B89548" stroke-width="1"/></svg><h3>The Heritage Letter</h3><p>Stories of weaving towns, new arrivals from the loom and care advice for silk. Once a month.</p><form><span>Your email address</span><b>Subscribe</b></form></section>
+<footer class="ft"><div class="ft-top"><div class="ft-br"><div class="logo ft-logo"><span class="lg"><svg class="ai" viewBox="0 0 24 30" aria-hidden="true"><path d="M2 29V12Q2 3 12 1Q22 3 22 12V29" fill="none" stroke="#B89548" stroke-width="1.4"/><path d="M7 29V14Q7 8 12 6.5Q17 8 17 14V29" fill="none" stroke="#B89548" stroke-width="1"/></svg><b>TAANA</b></span></div><p>Pure silk Kanjivaram and Banarasi sarees, certified for real silk and real zari.</p><div class="soc"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="currentColor"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.8c0-.9.4-1.5 1.6-1.5h1.5V4.6c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H8.5v3h2.5V21"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5"/><path d="M10.5 9.5l4 2.5-4 2.5z"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10.6 16.8l1.6-6.3M10.7 13.7c.4.6 1 .9 1.8.9 1.9 0 3.1-1.7 3.1-3.8 0-1.9-1.5-3.3-3.6-3.3-2.4 0-3.8 1.7-3.8 3.5 0 .7.3 1.4.8 1.7"/></svg></span></div></div>
+<div class="ft-c"><h4>Shop</h4><ul><li>Kanjivaram</li><li>Banarasi</li><li>Soft Silk</li><li>Tissue</li><li>Bridal Silk</li></ul></div><div class="ft-c"><h4>Help</h4><ul><li>Silk Mark &amp; zari</li><li>Shipping &amp; insurance</li><li>Exchanges</li><li>Silk care</li><li>Track order</li></ul></div><div class="ft-c"><h4>Heritage</h4><ul><li>Weaving towns</li><li>Our weavers</li><li>Journal</li><li>Visit us</li></ul></div>
+<div class="ft-c"><h4>Contact us</h4><ul><li>WhatsApp +91 XXXXX XXXXX</li><li>care@your-store.in</li><li>Mon–Sat, 10 am – 7 pm</li><li>Studio address, City</li></ul></div></div>
+<div class="ft-bot"><span>© 2026 Taana · All prices in INR, inclusive of GST</span><span class="pay"><i>UPI</i><i>Visa</i><i>Mastercard</i><i>RuPay</i><i>Net banking</i><i>COD</i></span></div></footer>
+<div class="fab" aria-hidden="true"><span class="fab-c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.4 18.5z"/></svg></span><span class="fab-t"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12.5l5-5 5 5M7 18l5-5 5 5"/></svg></span></div>
+</div></div></div>
+<script>if(/[?&]shot/.test(location.search)){var tb=document.querySelector('.tpl');tb.parentNode.removeChild(tb);}(function(){var cq=document.querySelector('.cq');function fit(){var w=document.documentElement.clientWidth;if(w>=960&&w<1280){cq.style.width='1280px';cq.style.maxWidth='none';cq.style.zoom=(w/1280).toFixed(4);}else{cq.style.width='';cq.style.maxWidth='';cq.style.zoom='';}}fit();addEventListener('resize',fit);})();document.getElementById('sw').addEventListener('change',function(e){if(e.target.value)location.href=e.target.value;});</script>
+</body>
+</html>

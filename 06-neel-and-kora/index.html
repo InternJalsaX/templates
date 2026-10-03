@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Neel &amp; Kora · Saree storefront template</title>
+<meta name="description" content="Indigo &amp; Sand homepage template for an Indian saree store: Handloom, artisan and handcrafted, honest about who made what.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;600&family=Mukta:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&text=%E2%82%B9&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:#F8F5EE;font:14px system-ui,sans-serif}
+.cq{container:mk / inline-size;max-width:1680px;margin:0 auto}
+.mk a{cursor:pointer}
+.mk .st .fab{position:fixed;top:auto;bottom:20px;right:20px}
+.tpl{display:flex;justify-content:center;align-items:center;gap:6px 16px;flex-wrap:wrap;padding:7px 16px;background:#141413;color:#D8D5CE;font:500 12px/1.45 system-ui,'Segoe UI',sans-serif;text-align:center}
+.tpl b{color:#fff;font-weight:600}
+.tpl a{color:#fff;text-underline-offset:2px}
+@media (max-width:640px){.tpl .long{display:none}.tpl{gap:4px 12px;padding:6px 12px}}
+.tpl select{font:inherit;color:#fff;background:#2A2927;border:1px solid #444;border-radius:4px;padding:2px 6px}
+
+.mk,.mk *{box-sizing:border-box;margin:0;padding:0}
+.mk{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow:hidden}
+.mk a{color:inherit;text-decoration:none}
+.mk ul,.mk ol{list-style:none}
+.mk button{font:inherit;color:inherit;background:none;border:0}
+.mk .ph{display:block;width:100%;background-size:cover;background-position:50% 100%;background-repeat:no-repeat}
+.mk .ic{width:20px;height:20px;display:block;flex:none}
+.mk h1,.mk h2,.mk h3,.mk h4,.mk h5{font-weight:inherit;font-size:inherit;text-wrap:balance}
+.mk em{font-style:italic}
+.mk s{opacity:.62}
+@container mk (min-width: 960px){ .mk .mob{display:none!important} }
+@container mk (max-width: 959px){ .mk .dsk{display:none!important} }
+
+.st{position:relative;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--fb)}
+.st .ann{display:flex;justify-content:center;gap:40px;padding:9px 24px;background:var(--ann-bg);color:var(--ann-fg);font-size:12.5px;letter-spacing:.02em;text-align:center}
+.st .hd{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:18px 48px;background:var(--hd-bg,var(--bg));color:var(--hd-fg,var(--ink))}
+.st .srch{display:flex;align-items:center;justify-content:space-between;gap:12px;width:360px;height:46px;padding:0 18px 0 22px;border:1.5px solid var(--srch-bd);border-radius:var(--r-srch,999px);background:var(--srch-bg,transparent);color:var(--mu);font-size:15px}
+.st .srch b{font-weight:400;color:var(--ink)}
+.st .srch u{display:inline-block;width:1.5px;height:18px;background:var(--ink);vertical-align:-3px;margin-left:1px}
+.st .srch-i{width:22px;height:22px;color:var(--srch-ic,var(--ink))}
+.st .drop{position:absolute;left:48px;top:70px;width:360px;z-index:3;background:var(--card-bg,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -18px rgba(0,0,0,.35);padding:8px;font-size:14px}
+.st .logo{justify-self:center;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.st .hd-ic{justify-self:end;display:flex;align-items:center;gap:24px}
+.st .ib{position:relative;display:block}
+.st .ib .ic{width:26px;height:26px}
+.st .ib i{position:absolute;top:-7px;right:-9px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--cnt-bg);color:var(--cnt-fg);font:700 10.5px/18px var(--fb);font-style:normal;text-align:center}
+.st .hd-m .ic{width:26px;height:26px}
+.st .cat{display:flex;justify-content:center;flex-wrap:nowrap;gap:32px;padding:18px 40px 15px;background:var(--nav-bg,var(--bg));color:var(--nav-fg,var(--ink));border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:15.5px;font-weight:500}
+.st .cat a{position:relative;white-space:nowrap}
+.st .cat .tg{position:absolute;left:50%;top:-15px;transform:translateX(-50%);padding:2px 6px;border-radius:3px;background:var(--tag1-bg);color:var(--tag1-fg);font:700 9px/1.25 var(--fb);letter-spacing:.06em}
+.st .cat .tg.t2{background:var(--tag2-bg);color:var(--tag2-fg)}
+.st .usp{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:26px 48px;background:var(--usp-bg,transparent);color:var(--usp-fg,var(--ink));border-bottom:1px solid var(--usp-line,transparent)}
+.st .usp-i{display:flex;align-items:center;gap:14px;justify-content:center}
+.st .usp-i .ic{width:30px;height:30px;color:var(--usp-ic,var(--pri))}
+.st .usp-i b{display:block;font-weight:600;font-size:14.5px;line-height:1.3}
+.st .usp-i span{display:block;font-size:12.5px;color:var(--usp-mu,var(--mu))}
+.st .sec{padding:72px 48px 0}
+.st .sh{text-align:center;margin-bottom:34px}
+.st .sh h2{font-family:var(--fh);font-size:36px;line-height:1.15;color:var(--sh-c,var(--ink))}
+.st .sh p{color:var(--mu);margin-top:8px;font-size:15px}
+.st .tabs{display:flex;justify-content:center;gap:10px;margin-top:20px}
+.st .tabs span{padding:8px 18px;border:1px solid var(--line);border-radius:var(--r-pill,999px);font-size:14px;color:var(--mu)}
+.st .tabs span.on{background:var(--btn);border-color:var(--btn);color:var(--btn-fg)}
+.st .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px}
+.st .pc{display:flex;flex-direction:column;background:var(--card-bg,transparent);border:var(--card-bd,0);border-radius:var(--r-card,0);overflow:hidden;box-shadow:var(--card-sh,none)}
+.st .pc-im{position:relative;overflow:hidden;border-radius:var(--r-img,0)}
+.st .pc-im .ph{aspect-ratio:var(--ratio,3/4)}
+.st .pc-off{position:absolute;top:12px;left:12px;padding:6px 9px;border-radius:var(--r-off,6px);background:var(--off-bg);color:var(--off-fg);font:700 12.5px/1 var(--fb);letter-spacing:.02em}
+.st .pc-wl{position:absolute;top:10px;right:10px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--wl-bg,rgba(255,255,255,.92));color:var(--wl-fg,var(--ink))}
+.st .pc-wl.on{color:var(--sale)}
+.st .pc-wl.on .ic{fill:currentColor}
+.st .pc-qa{position:absolute;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:center;height:42px;border-radius:var(--r-btn,0);background:var(--btn);color:var(--btn-fg);font:600 13px/1 var(--fb);letter-spacing:.04em;opacity:0;transform:translateY(8px)}
+.st .pc:hover .pc-qa{opacity:1;transform:none}
+.st .pc-tk{overflow:hidden;white-space:nowrap;background:var(--tk-bg);color:var(--tk-fg);font:700 11.5px/1 var(--fb);letter-spacing:.06em;text-transform:uppercase;padding:8px 0}
+.st .tk-in{display:inline-flex;animation:tk 16s linear infinite}
+.st .pc-tk span{display:inline-flex;align-items:center;gap:7px;padding:0 14px}
+.st .pc-tk i{font-style:normal;color:var(--tk-ic,inherit)}
+@keyframes tk{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.st .tk-in{animation:none}}
+.st .pc-bd{padding:14px 14px 18px;text-align:var(--align,center)}
+.st .pc-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:var(--nm-w,400) var(--nm-s,17px)/1.35 var(--nm-f,var(--fb));color:var(--ink)}
+.st .pc-rt{display:flex;align-items:center;justify-content:var(--jc,center);gap:6px;margin-top:6px;font-size:13.5px;color:var(--mu)}
+.st .stars{position:relative;display:inline-block;color:var(--star-off,#D9D4CC);font-size:16px;letter-spacing:1.5px;line-height:1;font-family:system-ui,'Segoe UI Symbol',sans-serif}
+.st .stars::before{content:"★★★★★";position:absolute;inset:0;width:calc(var(--v) / 5 * 100%);overflow:hidden;color:var(--star)}
+.st .pc-pr{display:flex;align-items:baseline;justify-content:var(--jc,center);gap:10px;margin-top:8px;flex-wrap:wrap}
+.st .pc-pr b{font-weight:700;font-size:17.5px;color:var(--sale)}
+.st .pc-pr s{font-size:14px;color:var(--mu)}
+.st .pc-pr em{font-style:normal;font-size:13px;font-weight:600;color:var(--pct,var(--sale))}
+.st .pc-more{justify-content:center;align-items:center;gap:10px;text-align:center;padding:24px;background:var(--more-bg,var(--btn));color:var(--more-fg,var(--btn-fg));border:0;box-shadow:none}
+.st .pm-n{font:400 64px/1 var(--fh)}
+.st .pm-t{font-size:15px;line-height:1.4;max-width:180px;opacity:.9}
+.st .pm-a{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding-bottom:3px;border-bottom:1px solid currentColor;font-weight:600;font-size:14px}
+.st .pm-a .ic{width:16px;height:16px}
+.st .more-b{display:table;margin:36px auto 0;padding:14px 32px;border:1.5px solid var(--btn);border-radius:var(--r-btn,0);color:var(--btn);font:600 14px/1 var(--fb);letter-spacing:.04em}
+.st .ft{margin-top:88px;padding:64px 48px 28px;background:var(--ft-bg);color:var(--ft-fg)}
+.st .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.25fr;gap:40px}
+.st .ft-logo{justify-self:start;margin-bottom:16px}
+.st .ft-br p{font-size:14px;line-height:1.65;color:var(--ft-mu);max-width:300px}
+.st .soc{display:flex;gap:10px;margin-top:18px}
+.st .soc span{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--ft-line)}
+.st .soc .ic{width:18px;height:18px}
+.st .ft h4{font:700 13px/1.3 var(--fb);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;color:var(--ft-h,var(--ft-fg))}
+.st .ft li{font-size:14px;line-height:2.05;color:var(--ft-mu)}
+.st .ft-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:48px;padding-top:22px;border-top:1px solid var(--ft-line);font-size:12.5px;color:var(--ft-mu)}
+.st .pay{display:flex;gap:6px}
+.st .pay i{font-style:normal;font-size:11px;font-weight:600;padding:5px 8px;border-radius:4px;border:1px solid var(--ft-line);color:var(--ft-fg)}
+.st .fab{position:absolute;right:22px;top:700px;display:grid;gap:12px;z-index:4}
+.st .fab span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px -8px rgba(0,0,0,.4)}
+.st .fab .ic{width:24px;height:24px}
+.st .fab-c{background:var(--fab-bg,var(--btn));color:var(--fab-fg,var(--btn-fg))}
+.st .fab-t{background:#fff;color:#1d1d1d}
+
+@container mk (max-width: 959px){
+  .st{font-size:14px}
+  .st .ann{font-size:11px;padding:8px 12px}
+  .st .ann .x{display:none}
+  .st .hd{grid-template-columns:auto 1fr auto;gap:12px;padding:12px 16px}
+  .st .hd .logo{justify-self:start}
+  .st .hd-ic{gap:18px}
+  .st .ib .ic,.st .hd-m .ic{width:24px;height:24px}
+  .st .msrch{width:auto;height:42px;margin:0 16px 12px;font-size:14px}
+  .st .cat{justify-content:flex-start;gap:8px;overflow:hidden;padding:16px 16px 12px;font-size:13px}
+  .st .cat a{padding:7px 13px;border:1px solid var(--line);border-radius:999px}
+  .st .cat .tg{top:-9px;font-size:8px;padding:1px 5px}
+  .st .usp{grid-template-columns:1fr 1fr;gap:14px 10px;padding:18px 16px}
+  .st .usp-i{justify-content:flex-start;gap:10px}
+  .st .usp-i .ic{width:24px;height:24px}
+  .st .usp-i b{font-size:13px}
+  .st .usp-i span{font-size:11.5px}
+  .st .sec{padding:44px 16px 0}
+  .st .sh{margin-bottom:20px}
+  .st .sh h2{font-size:26px}
+  .st .sh p{font-size:13.5px}
+  .st .tabs{justify-content:flex-start;overflow:hidden;gap:8px}
+  .st .tabs span{padding:7px 14px;font-size:13px;white-space:nowrap}
+  .st .grid{grid-template-columns:1fr 1fr;gap:14px 12px}
+  .st .pc-off{top:8px;left:8px;font-size:11px;padding:5px 7px}
+  .st .pc-wl{top:6px;right:6px;width:30px;height:30px}
+  .st .pc-wl .ic{width:17px;height:17px}
+  .st .pc-tk{font-size:9.5px;padding:6px 0}
+  .st .pc-bd{padding:10px 8px 12px}
+  .st .pc-nm{font-size:13.5px}
+  .st .pc-rt{font-size:12px;gap:4px}
+  .st .stars{font-size:13px;letter-spacing:.5px}
+  .st .pc-pr{gap:6px}
+  .st .pc-pr b{font-size:15px}
+  .st .pc-pr s{font-size:12px}
+  .st .pc-pr em{font-size:11.5px}
+  .st .pc-qa{display:none}
+  .st .more-b{margin-top:24px;width:100%;text-align:center}
+  .st .ft{margin-top:56px;padding:40px 16px 96px}
+  .st .ft-top{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .st .ft-br{grid-column:1/-1}
+  .st .ft-bot{flex-direction:column;align-items:flex-start;gap:14px}
+  .st .pay{flex-wrap:wrap}
+  .st .pm-n{font-size:40px}.st .pm-t{font-size:12.5px}.st .pc-more{padding:14px}
+  .st .fab{right:14px;top:520px}
+  .st .fab span{width:46px;height:46px}
+}
+
+.m06{--bg:#F8F5EE;--ink:#1E2537;--mu:#5A5F6E;--line:#D9CCB0;--pri:#273B66;--fb:'Mukta',system-ui,sans-serif;--fh:'Eczar',Georgia,serif;
+--ann-bg:#E9DFCB;--ann-fg:#273B66;--hd-bg:#F8F5EE;--srch-bd:#273B66;--srch-bg:#FFFDF8;--srch-ic:#273B66;--cnt-bg:#B4613D;--cnt-fg:#FFFFFF;
+--nav-bg:#F8F5EE;--tag1-bg:#B4613D;--tag1-fg:#FFFFFF;--tag2-bg:#273B66;--tag2-fg:#F8F5EE;--usp-ic:#273B66;--usp-line:#D9CCB0;
+--card-bg:#FFFDF8;--card-bd:1px dashed #BFAE88;--r-card:4px;--r-img:2px;--off-bg:#B4613D;--off-fg:#FFFFFF;--r-off:0;--wl-bg:#FFFDF8;--wl-fg:#273B66;
+--tk-bg:#273B66;--tk-fg:#F1EADB;--tk-ic:#E0A783;--nm-s:16px;--nm-w:600;--align:left;--jc:flex-start;--star:#B4613D;--star-off:#E2D7C0;--sale:#273B66;
+--btn:#273B66;--btn-fg:#F8F5EE;--r-btn:4px;--ft-bg:#1B2A4A;--ft-fg:#EDE6D6;--ft-mu:#B7BCCB;--ft-line:rgba(237,230,214,.18);--ft-h:#E0A783;--fab-bg:#273B66}
+.m06 .mono,.m06 .ann,.m06 .pc-tk,.m06 .pc-off{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.m06 .ann{font-size:11.5px;letter-spacing:.08em}
+.m06 .srch{border-style:dashed;border-radius:4px;font-size:14.5px}
+.m06 .lg{display:flex;align-items:baseline;gap:10px}
+.m06 .lg b{font:600 34px/1 'Eczar',serif;color:#273B66}
+.m06 .lg i{font:500 20px/1 'Eczar',serif;font-style:normal;color:#9E4F2F}
+.m06 .cat{font-size:15.5px;gap:30px;border-top:1px dashed #C9B996;border-bottom:1px dashed #C9B996}
+.m06 .cat .tg{font-family:'IBM Plex Mono',monospace;border-radius:0}
+.m06 .hl{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center;padding:48px 48px 32px}
+.m06 .eb{font:500 13px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#9E4F2F}
+.m06 .hl h1{font:600 70px/1.02 'Eczar',serif;color:#273B66;margin-top:18px;letter-spacing:-.01em}
+.m06 .sub{font-size:18px;line-height:1.6;color:#4A5063;margin-top:18px}
+.m06 .ctas{display:flex;align-items:center;gap:22px;margin-top:28px}
+.m06 .b1{display:inline-flex;align-items:center;height:50px;padding:0 26px;border-radius:4px;background:#273B66;color:#F8F5EE;font-weight:600;font-size:15.5px}
+.m06 .tl{color:#9E4F2F;font-weight:600;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+.m06 .hl-n{margin-top:36px;font:500 12px 'IBM Plex Mono',monospace;color:#5A5F6E}
+.m06 .hl-v{position:relative;padding:0 0 40px 40px}
+.m06 .hl-i{aspect-ratio:5/4;border-radius:2px}
+.m06 .tag{position:absolute;left:0;bottom:0;width:300px;padding:22px 20px 18px 34px;background:#FFFDF8;border:1px dashed #9E8A62;box-shadow:0 18px 30px -18px rgba(27,42,74,.45);clip-path:polygon(20px 0,100% 0,100% 100%,20px 100%,0 50%)}
+.m06 .hole{position:absolute;left:14px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#F8F5EE;border:1.5px solid #9E8A62}
+.m06 .tg-h{font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#9E4F2F;margin-bottom:12px}
+.m06 .tag dl div{display:grid;grid-template-columns:96px 1fr;gap:8px;padding:5px 0;border-top:1px dashed #D9CCB0}
+.m06 .tag dt{font:500 10.5px/1.6 'IBM Plex Mono',monospace;color:#5A5F6E}
+.m06 .tag dd{margin:0;font-size:14px;color:#1E2537}
+.m06 .tg-p{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:14px}
+.m06 .tg-p b{font:600 20px 'Eczar',serif;color:#273B66}
+.m06 .tg-p u{color:#9E4F2F}
+.m06 .usp{border-top:1px dashed #C9B996;border-bottom:1px dashed #C9B996;padding:24px 48px}
+.m06 .usp-i + .usp-i{border-left:1px dashed #C9B996}
+.m06 .sec{padding:80px 48px 0}
+.m06 .sh{display:flex;justify-content:space-between;align-items:flex-end;text-align:left;margin-bottom:30px;padding-bottom:16px;border-bottom:1px dashed #C9B996}
+.m06 .sh h2{font:600 42px/1.05 'Eczar',serif;color:#273B66}
+.m06 .sh p{font-size:16px;margin-top:6px}
+.m06 .sh .mono{font-size:12px;letter-spacing:.08em;color:#9E4F2F}
+.m06 .sh-a{font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.06em;color:#9E4F2F}
+.m06 .rs{display:inline-flex;align-items:center;gap:10px}
+.m06 .wv-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px dashed #C9B996}
+.m06 .wv-g a{display:block;padding:16px}
+.m06 .wv-g a + a{border-left:1px dashed #C9B996}
+.m06 .wv-i{aspect-ratio:4/3;border-radius:2px}
+.m06 .wv-g b{display:block;font:600 26px/1.1 'Eczar',serif;color:#273B66;margin-top:14px}
+.m06 .wv-g .mono{display:block;font-size:11px;letter-spacing:.06em;color:#5A5F6E;margin-top:4px}
+.m06 .wv-g em{display:block;font-style:normal;color:#9E4F2F;font-weight:600;margin-top:10px;font-size:14.5px}
+.m06 .grid{gap:24px}
+.m06 .pc{padding:10px}
+.m06 .pc-tk{font-size:10.5px;letter-spacing:.06em;margin-top:8px;border-radius:2px}
+.m06 .pc-off{font-size:11px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,8px 50%);padding:6px 9px 6px 14px;top:14px;left:0}
+.m06 .pc-bd{padding:12px 4px 4px}
+.m06 .pc-pr b{font:600 19px 'Eczar',serif}
+.m06 .pc-more{--more-bg:#E9DFCB;--more-fg:#273B66;border:1px dashed #9E8A62}
+.m06 .pm-n{font-weight:600}
+.m06 .pm-a{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px}
+.m06 .more-b{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12.5px;border-radius:4px}
+.m06 .mw{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center;margin-top:88px;padding:64px 48px;background:#E9DFCB}
+.m06 .mw-i{aspect-ratio:1/1;border-radius:2px;outline:1px dashed #9E8A62;outline-offset:8px}
+.m06 .cap{font-size:11px;letter-spacing:.06em;color:#5A5F6E;margin-top:18px}
+.m06 .eb2{font-size:12px;letter-spacing:.1em;color:#9E4F2F}
+.m06 .mw h2{font:500 34px/1.25 'Eczar',serif;color:#273B66;margin-top:14px}
+.m06 .who{font-weight:600;margin-top:16px}
+.m06 .mw-t > p:not(.eb2):not(.who){color:#4A5063;margin:12px 0 26px;font-size:16.5px;line-height:1.65}
+.m06 .pr{position:relative;margin-top:0;padding:72px 48px 0;background:#273B66;color:#F1EADB;overflow:hidden}
+.m06 .pr-h{display:flex;justify-content:space-between;align-items:flex-end}
+.m06 .pr-h h2{font:600 44px/1 'Eczar',serif}
+.m06 .pr-h p{color:#B7BCCB}
+.m06 .pr-g{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:44px}
+.m06 .pr-g::before{content:"";position:absolute;left:28px;right:12%;top:28px;border-top:1.5px dashed #E0A783}
+.m06 .pr-g > div{position:relative}
+.m06 .pr-i{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#273B66;border:1.5px solid #E0A783;color:#F1EADB}
+.m06 .pr-i .ic{width:26px;height:26px}
+.m06 .pr-g .mono{display:block;margin-top:16px;font-size:12px;color:#E0A783}
+.m06 .pr-g h3{font:600 26px/1.1 'Eczar',serif;margin-top:6px}
+.m06 .pr-g p{margin-top:8px;color:#C9CEDA;font-size:15px;line-height:1.55}
+.m06 .pr-loom{height:120px;margin-top:48px;opacity:.9;background-position:50% 30%}
+.m06 .rv-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.m06 .rc{padding:22px;border:1px dashed #BFAE88;border-radius:4px;background:#FFFDF8}
+.m06 .rc p{margin:12px 0 16px;font-size:16px;line-height:1.6}
+.m06 .rc-f{display:flex;gap:12px;align-items:center;padding-top:14px;border-top:1px dashed #D9CCB0}
+.m06 .rc-f .th{width:44px;height:56px;border-radius:2px;flex:none}
+.m06 .rc-f b{display:block;font-size:14.5px}
+.m06 .rc-f .mono{font-size:10.5px;letter-spacing:.04em;color:#5A5F6E}
+.m06 .nl{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;margin:88px 48px 0;padding:40px 44px;background:#E9DFCB;outline:1px dashed #9E8A62;outline-offset:-10px}
+.m06 .nl h3{font:600 36px/1.05 'Eczar',serif;color:#273B66}
+.m06 .nl p{color:#4A5063;margin-top:6px}
+.m06 .seg{display:inline-flex;border:1px solid #273B66;border-radius:4px;overflow:hidden;margin-bottom:10px;font-size:13.5px}
+.m06 .seg span{padding:6px 14px}
+.m06 .seg .on{background:#273B66;color:#F8F5EE}
+.m06 .nl form{display:flex;width:430px;background:#FFFDF8;border:1px solid #273B66;border-radius:4px}
+.m06 .nl form span{flex:1;padding:14px 16px;color:#5A5F6E}
+.m06 .nl form b{display:grid;place-items:center;padding:0 24px;background:#273B66;color:#F8F5EE}
+.m06 .ft .lg b{color:#EDE6D6}.m06 .ft .lg i{color:#E0A783}
+.m06 .ft-bot{font-family:'IBM Plex Mono',monospace;font-size:11px}
+@container mk (max-width: 959px){
+  .m06 .ann .x{display:none}.m06 .ann{font-size:10px}
+  .m06 .lg b{font-size:28px}.m06 .lg i{font-size:16px}
+  .m06 .cat a{border-style:dashed}
+  .m06 .hl{grid-template-columns:1fr;gap:26px;padding:24px 16px 16px}.m06 .hl h1{font-size:44px}.m06 .sub{font-size:15.5px}
+  .m06 .ctas{flex-direction:column;align-items:flex-start;gap:16px}
+  .m06 .hl-v{padding:0 0 0 0}.m06 .hl-i{aspect-ratio:4/5}
+  .m06 .tag{position:relative;width:auto;margin:-40px 12px 0 24px}
+  .m06 .usp{padding:16px}.m06 .usp-i + .usp-i{border-left:0}
+  .m06 .sec{padding:56px 16px 0}.m06 .sh{flex-direction:column;align-items:flex-start;gap:8px}.m06 .sh h2{font-size:32px}
+  .m06 .wv-g{grid-template-columns:1fr 1fr}.m06 .wv-g a:nth-child(3){border-left:0}.m06 .wv-g a:nth-child(n+3){border-top:1px dashed #C9B996}.m06 .wv-g b{font-size:20px}.m06 .wv-g a{padding:10px}
+  .m06 .pc{padding:6px}
+  .m06 .mw{grid-template-columns:1fr;gap:28px;padding:40px 20px;margin-top:56px}.m06 .mw h2{font-size:24px}
+  .m06 .pr{padding:48px 20px 0}.m06 .pr-h{flex-direction:column;align-items:flex-start;gap:8px}.m06 .pr-h h2{font-size:34px}
+  .m06 .pr-g{grid-template-columns:1fr;gap:24px}.m06 .pr-g::before{left:28px;right:auto;top:0;bottom:0;border-top:0;border-left:1.5px dashed #E0A783}
+  .m06 .pr-g > div{padding-left:76px}.m06 .pr-i{position:absolute;left:0;top:0}.m06 .pr-g .mono{margin-top:0}
+  .m06 .rv-g{grid-template-columns:1fr}
+  .m06 .nl{grid-template-columns:1fr;margin:56px 16px 0;padding:30px 22px;gap:18px}.m06 .nl h3{font-size:28px}.m06 .nl form{width:auto}
+}
+@container mk (min-width: 641px) and (max-width: 959px){
+.mk .st .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.m01 .hm{max-width:620px;margin-inline:auto}.m01 .sto-i{max-width:480px}
+.m02 .tri .fr.c{width:52%}.m02 .ap-i{max-width:480px;margin-inline:auto}
+.m03 .hx-v{max-width:560px;margin-inline:auto}.m03 .nd-v{max-width:520px}
+.m04 .sp-i{aspect-ratio:5/4}.m04 .fd-i{max-width:480px}
+.m05 .fh-w{width:52%}
+.m06 .hl-i{aspect-ratio:4/3}.m06 .mw-i{max-width:520px}
+.m07 .hb-b{aspect-ratio:4/3}
+.m08 .cover{width:60%;justify-self:center}.m08 .sp-i{aspect-ratio:4/3}
+.m09 .hc-i{aspect-ratio:4/3}.m09 .sl-i{max-width:520px}
+.m10 .sp-f{width:56%;justify-self:center}.m10 .hs-i{max-width:520px}
+}
+.i-ph-p4{background-image:url("../assets/photos/p4.webp")}
+.i-ph-p7{background-image:url("../assets/photos/p7.webp")}
+.i-ph-p5{background-image:url("../assets/photos/p5.webp")}
+.i-ph-p1{background-image:url("../assets/photos/p1.webp")}
+.i-ph-p3{background-image:url("../assets/photos/p3.webp")}
+.i-ph-p6{background-image:url("../assets/photos/p6.webp")}
+.i-ph-p2{background-image:url("../assets/photos/p2.webp")}
+.i-loom-b{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Cdefs%3E%3CradialGradient id='w2' cx='.55' cy='.35' r='.8'%3E%3Cstop offset='0' stop-color='%23fff' stop-opacity='0.1'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='0.06'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='%2322335E'/%3E%3Crect width='400' height='300' fill='url(%23w2)'/%3E%3Crect x='32' y='18' width='336' height='14' rx='4' fill='%237A5A3A'/%3E%3Crect x='32' y='270' width='336' height='16' rx='4' fill='%237A5A3A'/%3E%3Cpath d='M40.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M44.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M48.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M52.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M56.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M60.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M64.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M68.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M72.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M76.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M80.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M84.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M88.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M92.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M96.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M100.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M104.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M108.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M112.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M116.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M120.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M124.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M128.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M132.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M136.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M140.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M144.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M148.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M152.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M156.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M160.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M164.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M168.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M172.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M176.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M180.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M184.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M188.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M192.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M196.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M200.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M204.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M208.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M212.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M216.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M220.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M224.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M228.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M232.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M236.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M240.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M244.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M248.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M252.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M256.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M260.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M264.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M268.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M272.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M276.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M280.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M284.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M288.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M292.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M296.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M300.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M304.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M308.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M312.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M316.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M320.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M324.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M328.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M332.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M336.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M340.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M344.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M348.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M352.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Cpath d='M356.0 24V270' stroke='%234A5D8E' stroke-width='1.3'/%3E%3Crect x='40' y='174' width='320' height='96' fill='%23E9DFCB'/%3E%3Cpath d='M40 180.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 183.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 186.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 189.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 192.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 195.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 198.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 201.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 204.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 207.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 210.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 213.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 216.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 219.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 222.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 225.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 228.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 231.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 234.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 237.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 240.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 243.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 246.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 249.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 252.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 255.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 258.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 261.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 264.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cpath d='M40 267.0H360' stroke='%23000' stroke-opacity='.12'/%3E%3Cdefs%3E%3Cpattern id='l3' width='36' height='39' patternUnits='userSpaceOnUse'%3E%3Cg transform='scale(1.5)'%3E%3Cg fill='%23273B66'%3E%3Cpath d='M6 2.5l3 4.5-3 4.5-3-4.5zM18 15.5l3 4.5-3 4.5-3-4.5z'/%3E%3C/g%3E%3Cpath d='M6 11.5v3.5M18 11v4' stroke='%23273B66' stroke-width='.9'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='40' y='186' width='320' height='78' fill='url(%23l3)'/%3E%3Crect x='40' y='159' width='320' height='10' rx='3' fill='%238B6A48'/%3E%3Cpath d='M120 150l40 -6 18 6 -18 6z' fill='%235C4128'/%3E%3C/svg%3E")}
+</style>
+</head>
+<body>
+<div class="tpl"><span>Template preview: <b>06 Neel &amp; Kora</b><span class="long"> (Indigo &amp; Sand). The brand, prices, offers and reviews are samples.</span></span><a href="../">All 10 templates</a><a href="../directions.html#c06">Design spec</a><label>Switch: <select id="sw" aria-label="Switch template"><option value="">Neel &amp; Kora</option><option value="../01-the-quiet-drape/">01 The Quiet Drape</option><option value="../02-darbar/">02 Darbar</option><option value="../03-mitti-modern/">03 Mitti Modern</option><option value="../04-gulabi-hour/">04 Gulabi Hour</option><option value="../05-panna-heritage/">05 Panna Heritage</option><option value="../07-utsav/">07 Utsav</option><option value="../08-the-jamun-issue/">08 The Jamun Issue</option><option value="../09-tulsi-garden/">09 Tulsi Garden</option><option value="../10-midnight-zari/">10 Midnight Zari</option></select></label></div>
+<div class="cq"><div class="mk m06"><div class="st">
+<div class="ann"><span>HANDWOVEN IN 9 WEAVING CLUSTERS</span><span class="x">FREE SHIPPING OVER ₹2,999</span><span class="x">EVERY SAREE SHIPS WITH ITS WEAVER’S STORY</span></div>
+<header class="hd"><button class="hd-m mob" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="srch dsk"><span class="srch-t">Try “Kanjivaram” or “royal blue”</span><svg class="ic srch-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></div>
+<a class="logo"><span class="lg"><b>Taana</b><i>ताना</i></span></a>
+<div class="hd-ic"><a class="ib dsk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20a7.2 7.2 0 0 1 14.4 0"/></svg></a><a class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg><i>2</i></a><a class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8.5h13l-1 11.5h-11z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg><i>1</i></a></div></header>
+<div class="srch mob msrch"><span class="srch-t">Try “Kanjivaram” or “royal blue”</span><svg class="ic srch-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></div>
+<nav class="cat"><a>Shop by Weave<span class="tg">NEW</span></a><a>Shop by Region</a><a>Banarasi</a><a>Kanjivaram</a><a>Soft Silk</a><a>Tissue</a><a>Meet the Weavers<span class="tg t2">STORIES</span></a><a>Journal</a></nav>
+<section class="hl"><div class="hl-t"><p class="eb">हथकरघा · HANDLOOM</p><h1>Every Thread Has a Hometown.</h1><p class="sub">Banarasi from Varanasi, Kanjivaram from Kanchipuram, soft silk from the looms of the South. Handwoven sarees traced to the towns and the hands that made them.</p><div class="ctas"><a class="b1">Shop Handloom</a><a class="tl">Meet the Weavers →</a></div><p class="hl-n">01 / 03</p></div>
+<div class="hl-v"><div class="ph i-ph-p6 hl-i" style="background-position:42% 50%"></div><div class="tag"><span class="hole"></span><p class="tg-h">LOOM TAG № 0142</p><dl><div><dt>WEAVE</dt><dd>Soft silk, zari border</dd></div><div><dt>CLUSTER</dt><dd>Kanchipuram, Tamil Nadu</dd></div><div><dt>ON THE LOOM</dt><dd>9 days</dd></div><div><dt>ZARI</dt><dd>Tested gold zari</dd></div></dl><p class="tg-p"><b>₹5,800</b><u>View this saree</u></p></div></div></section>
+<div class="usp"><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M8.5 4v16M15.5 4v16"/><path d="M8.5 8h7M8.5 11h7M8.5 14h7M8.5 17h7"/></svg><p><b>Handwoven only</b><span>No powerloom copies</span></p></div><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.5" r="5.8"/><path d="M8.8 14.3L7.5 20.5l4.5-2 4.5 2-1.3-6.2"/><path d="M9.6 9.6l1.7 1.7 3.2-3.4"/></svg><p><b>Silk Mark &amp; Handloom Mark</b><span>Wherever certified</span></p></div><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17" r="1.7"/><circle cx="17" cy="17" r="1.7"/></svg><p><b>Free shipping</b><span>On orders above ₹2,999</span></p></div><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.4 18.5z"/></svg><p><b>Ask the weaver</b><span>Questions answered on WhatsApp</span></p></div></div>
+<section class="sec wv"><div class="sh"><div><h2>Shop by Weave</h2><p><span class="mono">4 WEAVES · 9 CLUSTERS</span></p></div><a class="sh-a">VIEW ALL →</a></div><div class="wv-g"><a><div class="ph i-ph-p1 wv-i" style="background-position:46% 52%;background-size:230%"></div><div><b>Banarasi</b><span class="mono">VARANASI, UTTAR PRADESH</span><em>64 sarees →</em></div></a><a><div class="ph i-ph-p5 wv-i" style="background-position:62% 30%;background-size:220%"></div><div><b>Kanjivaram</b><span class="mono">KANCHIPURAM, TAMIL NADU</span><em>48 sarees →</em></div></a><a><div class="ph i-ph-p3 wv-i" style="background-position:56% 60%;background-size:200%"></div><div><b>Soft Silk</b><span class="mono">KARNATAKA &amp; TAMIL NADU</span><em>57 sarees →</em></div></a><a><div class="ph i-ph-p7 wv-i" style="background-position:70% 24%;background-size:240%"></div><div><b>Tissue</b><span class="mono">VARANASI, UTTAR PRADESH</span><em>22 sarees →</em></div></a></div></section>
+<section class="sec g-new"><div class="sh"><div><h2>Fresh off the Loom</h2><p>New handwoven sarees, listed the week they arrive</p></div><a class="sh-a">VIEW ALL →</a></div>
+<div class="grid"><a class="pc"><div class="pc-im"><div class="ph i-ph-p6" style="background-position:40% 50%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Soft silk · Kanchipuram"><div class="tk-in"><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Soft Silk, Zari Border</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(64)</span></p>
+<p class="pc-pr"><b>₹5,800</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p5" style="background-position:50% 10%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Kanjivaram · Kanchipuram"><div class="tk-in"><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Kanjivaram, Annam Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(37)</span></p>
+<p class="pc-pr"><b>₹14,500</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p1" style="background-position:50% 45%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Banarasi · Varanasi"><div class="tk-in"><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Rani Pink Banarasi, Zari Jaal</p><p class="pc-rt"><span class="stars" style="--v:4.7" role="img" aria-label="Rated 4.7 out of 5">★★★★★</span><span>(52)</span></p>
+<p class="pc-pr"><b>₹8,800</b><s>₹9,800</s></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p3" style="background-position:50% 35%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Soft silk · silver zari"><div class="tk-in"><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Peacock Teal Soft Silk, Silver Zari</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(71)</span></p>
+<p class="pc-pr"><b>₹6,400</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p2" style="background-position:50% 40%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Banarasi · Varanasi"><div class="tk-in"><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Sindoor Banarasi Katan</p><p class="pc-rt"><span class="stars" style="--v:4.6" role="img" aria-label="Rated 4.6 out of 5">★★★★★</span><span>(29)</span></p>
+<p class="pc-pr"><b>₹9,200</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p4" style="background-position:50% 22%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Kanjivaram · Kanchipuram"><div class="tk-in"><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Wine Kanjivaram, Gold Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(44)</span></p>
+<p class="pc-pr"><b>₹13,800</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p7" style="background-position:44% 62%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Tissue · hand embroidery"><div class="tk-in"><span><i>⟡</i>Tissue · hand embroidery</span><span><i>⟡</i>Tissue · hand embroidery</span><span><i>⟡</i>Tissue · hand embroidery</span><span><i>⟡</i>Tissue · hand embroidery</span><span><i>⟡</i>Tissue · hand embroidery</span><span><i>⟡</i>Tissue · hand embroidery</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Lilac Tissue, Hand-Embroidered Border</p><p class="pc-rt"><span class="stars" style="--v:4.7" role="img" aria-label="Rated 4.7 out of 5">★★★★★</span><span>(18)</span></p>
+<p class="pc-pr"><b>₹14,500</b><s>₹16,100</s></p></div></a><a class="pc pc-more"><span class="pm-n">38</span><span class="pm-t">more sarees fresh off the loom</span><span class="pm-a">View all <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg></span></a></div><a class="more-b">VIEW ALL NEW HANDLOOM</a></section>
+<section class="mw"><div class="mw-v"><div class="ph i-ph-p5 mw-i" style="background-position:64% 30%;background-size:190%"></div><p class="cap mono">THE ANNAM (SWAN) BORDER, KANCHIPURAM</p></div><div class="mw-t"><p class="eb2 mono">MEET THE WEAVER</p><h2>“The border is woven on its own, then joined by hand. If you look closely, you can find the seam.”</h2><p class="who">Master weaver, Kanchipuram cluster · 31 years at the loom</p><p>Each Kanjivaram takes 9 to 15 days on the loom. We pay weavers per saree, upfront, and print the cluster on every label.</p><a class="b1">Shop Kanjivaram</a></div></section>
+<section class="sec g-best"><div class="sh"><div><h2>Weaver Favourites</h2><p>The sarees our weavers are proudest of</p></div><a class="sh-a">VIEW ALL →</a></div>
+<div class="grid"><a class="pc"><div class="pc-im"><div class="ph i-ph-p6" style="background-position:40% 50%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Soft silk · Kanchipuram"><div class="tk-in"><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span><span><i>⟡</i>Soft silk · Kanchipuram</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Soft Silk, Zari Border</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(64)</span></p>
+<p class="pc-pr"><b>₹5,800</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p3" style="background-position:50% 35%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Soft silk · silver zari"><div class="tk-in"><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span><span><i>⟡</i>Soft silk · silver zari</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Peacock Teal Soft Silk, Silver Zari</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(71)</span></p>
+<p class="pc-pr"><b>₹6,400</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p5" style="background-position:50% 10%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Kanjivaram · Kanchipuram"><div class="tk-in"><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span><span><i>⟡</i>Kanjivaram · Kanchipuram</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Kanjivaram, Annam Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(37)</span></p>
+<p class="pc-pr"><b>₹14,500</b></p></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p1" style="background-position:50% 45%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Banarasi · Varanasi"><div class="tk-in"><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span><span><i>⟡</i>Banarasi · Varanasi</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Rani Pink Banarasi, Zari Jaal</p><p class="pc-rt"><span class="stars" style="--v:4.7" role="img" aria-label="Rated 4.7 out of 5">★★★★★</span><span>(52)</span></p>
+<p class="pc-pr"><b>₹8,800</b><s>₹9,800</s></p></div></a></div></section>
+<section class="pr"><div class="pr-h"><h2>From Yarn to You</h2><p>Four steps, about three weeks, and no shortcuts.</p></div><div class="pr-g"><div><span class="pr-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M8.5 4v16M15.5 4v16"/><path d="M8.5 8h7M8.5 11h7M8.5 14h7M8.5 17h7"/></svg></span><span class="mono">01</span><h3>Yarn</h3><p>Silk and zari bought directly from cooperatives, then wound by hand.</p></div><div><span class="pr-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5s5.8 6.3 5.8 10.7a5.8 5.8 0 0 1-11.6 0C6.2 9.8 12 3.5 12 3.5z"/></svg></span><span class="mono">02</span><h3>Dye</h3><p>Dyed in small batches, so every lot has its own depth of colour.</p></div><div><span class="pr-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3.5 4.5h17M3.5 19.5h17M5 4.5v15M19 4.5v15"/><path d="M8 4.5v9M10.5 4.5v9M13 4.5v9M15.5 4.5v9"/><path d="M5 13.5h14M5 16.5h14"/></svg></span><span class="mono">03</span><h3>Loom</h3><p>7 to 21 days on a handloom, depending on the border and motifs.</p></div><div><span class="pr-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.8L12 3.5l8.5 4.3v8.4L12 20.5l-8.5-4.3z"/><path d="M3.5 7.8L12 12l8.5-4.2M12 12v8.5"/></svg></span><span class="mono">04</span><h3>You</h3><p>Shipped with a card naming the weave, the cluster and the days it took.</p></div></div><div class="ph i-loom-b pr-loom"></div></section>
+<section class="sec rv"><div class="sh"><div><h2>Notes from Customers</h2><p><span class="rs"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span> <span class="mono">4.8 / 5 · 2,870 REVIEWS</span></span></p></div><a class="sh-a">VIEW ALL →</a></div><div class="rv-g"><div class="rc"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><p>“You can see the hand in it: tiny irregularities in the border that make it feel alive. Nothing like the shiny powerloom ones.”</p><div class="rc-f"><div class="ph i-ph-p6 th" style="background-position:40% 50%"></div><div><b>Ishita Ghosh, Kolkata</b><span class="mono">VERIFIED · ROYAL BLUE SOFT SILK</span></div></div></div><div class="rc"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><p>“The card in the box told me it took 12 days to weave. I read it out to my mother and we both got a little emotional.”</p><div class="rc-f"><div class="ph i-ph-p5 th" style="background-position:50% 10%"></div><div><b>Lakshmi N., Coimbatore</b><span class="mono">VERIFIED · ROYAL BLUE KANJIVARAM</span></div></div></div><div class="rc"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><p>“Light enough for a full workday, rich enough for a wedding lunch. It is my most complimented saree.”</p><div class="rc-f"><div class="ph i-ph-p3 th" style="background-position:50% 35%"></div><div><b>Tanvi Mehta, Ahmedabad</b><span class="mono">VERIFIED · PEACOCK TEAL SOFT SILK</span></div></div></div></div></section>
+<section class="nl"><div><h3>Stories from the Loom</h3><p>One weaver, one town, one saree. Once a month, by email or WhatsApp.</p></div><div class="nl-r"><div class="seg"><span class="on">Email</span><span>WhatsApp</span></div><form><span>Your email address</span><b>Subscribe</b></form></div></section>
+<footer class="ft"><div class="ft-top"><div class="ft-br"><div class="logo ft-logo"><span class="lg"><b>Taana</b><i>ताना</i></span></div><p>Handwoven sarees traced to the towns and hands that made them.</p><div class="soc"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="currentColor"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.8c0-.9.4-1.5 1.6-1.5h1.5V4.6c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H8.5v3h2.5V21"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5"/><path d="M10.5 9.5l4 2.5-4 2.5z"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10.6 16.8l1.6-6.3M10.7 13.7c.4.6 1 .9 1.8.9 1.9 0 3.1-1.7 3.1-3.8 0-1.9-1.5-3.3-3.6-3.3-2.4 0-3.8 1.7-3.8 3.5 0 .7.3 1.4.8 1.7"/></svg></span></div></div>
+<div class="ft-c"><h4>Shop</h4><ul><li>Shop by Weave</li><li>Shop by Region</li><li>Banarasi</li><li>Kanjivaram</li><li>Soft Silk</li></ul></div><div class="ft-c"><h4>Help</h4><ul><li>Shipping</li><li>Returns</li><li>Caring for handloom</li><li>Track order</li><li>FAQs</li></ul></div><div class="ft-c"><h4>Weavers</h4><ul><li>Our clusters</li><li>Meet the weavers</li><li>How we pay</li><li>Journal</li></ul></div>
+<div class="ft-c"><h4>Contact us</h4><ul><li>WhatsApp +91 XXXXX XXXXX</li><li>hello@your-store.in</li><li>Mon–Sat, 10 am – 6 pm</li><li>Studio address, City</li></ul></div></div>
+<div class="ft-bot"><span>© 2026 Taana · Prices in INR, inclusive of GST · Clusters: Varanasi · Kanchipuram · Dharmavaram · Bengaluru</span><span class="pay"><i>UPI</i><i>Visa</i><i>Mastercard</i><i>RuPay</i><i>Net banking</i><i>COD</i></span></div></footer>
+<div class="fab" aria-hidden="true"><span class="fab-c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.4 18.5z"/></svg></span><span class="fab-t"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12.5l5-5 5 5M7 18l5-5 5 5"/></svg></span></div>
+</div></div></div>
+<script>if(/[?&]shot/.test(location.search)){var tb=document.querySelector('.tpl');tb.parentNode.removeChild(tb);}(function(){var cq=document.querySelector('.cq');function fit(){var w=document.documentElement.clientWidth;if(w>=960&&w<1280){cq.style.width='1280px';cq.style.maxWidth='none';cq.style.zoom=(w/1280).toFixed(4);}else{cq.style.width='';cq.style.maxWidth='';cq.style.zoom='';}}fit();addEventListener('resize',fit);})();document.getElementById('sw').addEventListener('change',function(e){if(e.target.value)location.href=e.target.value;});</script>
+</body>
+</html>

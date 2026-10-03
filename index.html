@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Saree Storefront Templates</title>
+<meta name="description" content="Ten homepage templates for an Indian saree store, built on one storefront structure with ten different themes.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Cormorant+Garamond&family=Playfair+Display&family=Bricolage+Grotesque&family=Instrument+Serif&family=Marcellus&family=Eczar&family=Rozha+One&family=Bodoni+Moda&family=Fraunces&family=Italiana&display=swap">
+<style>
+/* Layout: a gallery wall of ten templates on graphite-and-paper; colour belongs to the templates */
+:root{--paper:#F1F0EC;--sheet:#FFFFFF;--ink:#1B1A18;--ink-2:#55524C;--ink-3:#7E7A73;--rule:#D8D4CC;--chip:#E7E5DF;
+--ui:'Schibsted Grotesk','Segoe UI',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--paper:#131311;--sheet:#1C1B19;--ink:#EDEAE4;--ink-2:#ACA79E;--ink-3:#827E77;--rule:#35332F;--chip:#2B2A27;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.6 var(--ui);padding-inline:clamp(16px,3vw,40px);padding-block:0 64px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1320px;margin-inline:auto}
+.k{font:500 11.5px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin:0}
+header{padding-block:56px 36px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:end}
+h1{font:800 clamp(40px,6vw,80px)/.95 var(--ui);letter-spacing:-.035em;margin:14px 0 0;text-wrap:balance}
+.lede{font-size:17px;color:var(--ink-2);margin:0 0 14px}
+.links{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--ink);color:var(--paper);font-weight:600;text-decoration:none}
+.btn.alt{background:var(--chip);color:var(--ink)}
+.note{grid-column:1/-1;margin:0;padding-top:18px;border-top:1px solid var(--rule);font-size:13.5px;color:var(--ink-2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:20px}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.shot{display:block;aspect-ratio:16/10;overflow:hidden;background:var(--chip)}
+.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s ease}
+.shot:hover img{transform:scale(1.03)}
+@media (prefers-reduced-motion: reduce){.shot img{transition:none}}
+.sel{display:flex;height:6px}.sel i{flex:1}
+.body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+h2{font-size:30px;line-height:1.1;margin:4px 0 2px;font-weight:400}
+.mood{margin:0;color:var(--ink-2)}
+.fonts{margin:0;font:400 12px/1.5 var(--mono);color:var(--ink-3)}
+.acts{display:flex;gap:16px;margin-top:auto;padding-top:12px}
+.acts a{color:var(--ink);font-weight:600;text-underline-offset:3px}
+.acts .spec{color:var(--ink-2);font-weight:500}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--rule);color:var(--ink-3);font-size:13px}
+@media (max-width:900px){header{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div><p class="k">Ten themes · one storefront structure · October 2026</p><h1>Saree Storefront Templates</h1></div>
+<div><p class="lede">Ten homepage templates for an Indian saree store. All share the same proven storefront structure: search, centred logo, tagged categories and a deal-led product grid. Each has its own colours, fonts, cards and banner. Every template opens as a working, responsive page.</p>
+<div class="links"><a class="btn" href="./directions.html">Read the full design spec</a><a class="btn alt" href="./07-utsav/">Start with Utsav</a></div></div>
+<p class="note">These are design previews. “Taana” is a placeholder brand, and the prices, offers and reviews are sample content. Product photos come from the owner's reference images.</p></header>
+<main class="grid">
+<article class="card">
+<a class="shot" href="./01-the-quiet-drape/"><img src="assets/shots/01.webp" alt="The Quiet Drape homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#3B2A20"></i><i style="background:#D8C7AC"></i><i style="background:#FAF6EF"></i><i style="background:#F2EADD"></i><i style="background:#2A201A"></i><i style="background:#A8894F"></i><i style="background:#3B2A20"></i></div>
+<div class="body"><p class="k">01 · Minimal Ivory Luxury</p><h2 style="font-family:'Cormorant Garamond', Garamond, 'Times New Roman', serif">The Quiet Drape</h2><p class="mood">Quiet luxury: sophisticated, editorial and unhurried</p><p class="fonts">Cormorant Garamond + Jost</p>
+<div class="acts"><a class="go" href="./01-the-quiet-drape/">Open the site</a><a class="spec" href="./directions.html#c01">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./02-darbar/"><img src="assets/shots/02.webp" alt="Darbar homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#5E1224"></i><i style="background:#8C2A3C"></i><i style="background:#FBF4E8"></i><i style="background:#F3E4CB"></i><i style="background:#2B0B13"></i><i style="background:#C4A15A"></i><i style="background:#5E1224"></i></div>
+<div class="body"><p class="k">02 · Royal Burgundy</p><h2 style="font-family:'Playfair Display', Georgia, serif">Darbar</h2><p class="mood">Rich, luxurious and ceremonial, for weddings and festive silk</p><p class="fonts">Playfair Display + Source Sans 3</p>
+<div class="acts"><a class="go" href="./02-darbar/">Open the site</a><a class="spec" href="./directions.html#c02">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./03-mitti-modern/"><img src="assets/shots/03.webp" alt="Mitti Modern homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#B5532F"></i><i style="background:#EBDCC5"></i><i style="background:#F8F1E7"></i><i style="background:#EBDCC5"></i><i style="background:#2B2522"></i><i style="background:#D4793A"></i><i style="background:#B5532F"></i></div>
+<div class="body"><p class="k">03 · Contemporary Terracotta</p><h2 style="font-family:'Bricolage Grotesque', 'DM Sans', system-ui, sans-serif">Mitti Modern</h2><p class="mood">Modern Indian, warm, earthy and artistic</p><p class="fonts">Bricolage Grotesque + DM Sans</p>
+<div class="acts"><a class="go" href="./03-mitti-modern/">Open the site</a><a class="spec" href="./directions.html#c03">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./04-gulabi-hour/"><img src="assets/shots/04.webp" alt="Gulabi Hour homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#6E3B53"></i><i style="background:#C98B92"></i><i style="background:#FCF6F3"></i><i style="background:#F6E4E1"></i><i style="background:#3E2A2F"></i><i style="background:#A85F6C"></i><i style="background:#6E3B53"></i></div>
+<div class="body"><p class="k">04 · Soft Rose</p><h2 style="font-family:'Instrument Serif', Georgia, serif">Gulabi Hour</h2><p class="mood">Feminine, romantic and elegant, sophisticated rather than sweet</p><p class="fonts">Instrument Serif + Figtree</p>
+<div class="acts"><a class="go" href="./04-gulabi-hour/">Open the site</a><a class="spec" href="./directions.html#c04">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./05-panna-heritage/"><img src="assets/shots/05.webp" alt="Panna Heritage homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#0E4D3E"></i><i style="background:#2E5E3A"></i><i style="background:#F7F2E6"></i><i style="background:#EDE5D1"></i><i style="background:#1C2A24"></i><i style="background:#B89548"></i><i style="background:#0E4D3E"></i></div>
+<div class="body"><p class="k">05 · Emerald Heritage</p><h2 style="font-family:'Marcellus', Georgia, serif">Panna Heritage</h2><p class="mood">Traditional craftsmanship meets modern luxury</p><p class="fonts">Marcellus + Alegreya Sans</p>
+<div class="acts"><a class="go" href="./05-panna-heritage/">Open the site</a><a class="spec" href="./directions.html#c05">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./06-neel-and-kora/"><img src="assets/shots/06.webp" alt="Neel &amp; Kora homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#273B66"></i><i style="background:#B4613D"></i><i style="background:#F8F5EE"></i><i style="background:#E9DFCB"></i><i style="background:#1E2537"></i><i style="background:#B4613D"></i><i style="background:#273B66"></i></div>
+<div class="body"><p class="k">06 · Indigo &amp; Sand</p><h2 style="font-family:'Eczar', Georgia, serif">Neel &amp; Kora</h2><p class="mood">Handloom, artisan and handcrafted, honest about who made what</p><p class="fonts">Eczar + Mukta</p>
+<div class="acts"><a class="go" href="./06-neel-and-kora/">Open the site</a><a class="spec" href="./directions.html#c06">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./07-utsav/"><img src="assets/shots/07.webp" alt="Utsav homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#A61E22"></i><i style="background:#F2A516"></i><i style="background:#FFF8EC"></i><i style="background:#FFEBC2"></i><i style="background:#3A1A10"></i><i style="background:#EE6C55"></i><i style="background:#A61E22"></i></div>
+<div class="body"><p class="k">07 · Marigold Festival</p><h2 style="font-family:'Rozha One', Georgia, serif">Utsav</h2><p class="mood">Joyful, vibrant and celebratory, still tidy enough to feel premium</p><p class="fonts">Rozha One + Hind</p>
+<div class="acts"><a class="go" href="./07-utsav/">Open the site</a><a class="spec" href="./directions.html#c07">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./08-the-jamun-issue/"><img src="assets/shots/08.webp" alt="The Jamun Issue homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#4A1D3F"></i><i style="background:#E8D5B5"></i><i style="background:#FBF8F3"></i><i style="background:#F1E8DA"></i><i style="background:#241420"></i><i style="background:#8C7B6E"></i><i style="background:#4A1D3F"></i></div>
+<div class="body"><p class="k">08 · Plum &amp; Champagne</p><h2 style="font-family:'Bodoni Moda', Didot, 'Bodoni 72', serif">The Jamun Issue</h2><p class="mood">Modern luxury fashion boutique, edited like a magazine</p><p class="fonts">Bodoni Moda + Hanken Grotesk</p>
+<div class="acts"><a class="go" href="./08-the-jamun-issue/">Open the site</a><a class="spec" href="./directions.html#c08">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./09-tulsi-garden/"><img src="assets/shots/09.webp" alt="Tulsi Garden homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#7C9473"></i><i style="background:#6B6E3D"></i><i style="background:#FAF7F0"></i><i style="background:#E8EDE0"></i><i style="background:#3E3229"></i><i style="background:#E9B596"></i><i style="background:#4E6A4A"></i></div>
+<div class="body"><p class="k">09 · Sage Botanical</p><h2 style="font-family:'Fraunces', Georgia, serif">Tulsi Garden</h2><p class="mood">Calm, natural and contemporary, with a slow-living warmth</p><p class="fonts">Fraunces + Nunito Sans</p>
+<div class="acts"><a class="go" href="./09-tulsi-garden/">Open the site</a><a class="spec" href="./directions.html#c09">Read the spec</a></div></div></article>
+<article class="card">
+<a class="shot" href="./10-midnight-zari/"><img src="assets/shots/10.webp" alt="Midnight Zari homepage, desktop view" loading="lazy" width="1280" height="800"></a>
+<div class="sel" aria-hidden="true"><i style="background:#0D0C0B"></i><i style="background:#1C1B19"></i><i style="background:#0D0C0B"></i><i style="background:#161513"></i><i style="background:#F2EBDD"></i><i style="background:#B8955A"></i><i style="background:#B8955A"></i></div>
+<div class="body"><p class="k">10 · Black &amp; Antique Gold</p><h2 style="font-family:'Italiana', Didot, 'Bodoni 72', serif">Midnight Zari</h2><p class="mood">Bold, premium and high-fashion, like a luxury Indian fashion house</p><p class="fonts">Italiana + Manrope</p>
+<div class="acts"><a class="go" href="./10-midnight-zari/">Open the site</a><a class="spec" href="./directions.html#c10">Read the spec</a></div></div></article>
+</main>
+<footer>Each template is a single HTML page with its own CSS, using Google Fonts and the shared photos in <code>assets/photos</code>. Widths under 960 px get the mobile layout.</footer>
+</div>
+</body>
+</html>

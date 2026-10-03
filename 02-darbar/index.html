@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Darbar · Saree storefront template</title>
+<meta name="description" content="Royal Burgundy homepage template for an Indian saree store: Rich, luxurious and ceremonial, for weddings and festive silk.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&text=%E2%82%B9&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:#FBF4E8;font:14px system-ui,sans-serif}
+.cq{container:mk / inline-size;max-width:1680px;margin:0 auto}
+.mk a{cursor:pointer}
+.mk .st .fab{position:fixed;top:auto;bottom:20px;right:20px}
+.tpl{display:flex;justify-content:center;align-items:center;gap:6px 16px;flex-wrap:wrap;padding:7px 16px;background:#141413;color:#D8D5CE;font:500 12px/1.45 system-ui,'Segoe UI',sans-serif;text-align:center}
+.tpl b{color:#fff;font-weight:600}
+.tpl a{color:#fff;text-underline-offset:2px}
+@media (max-width:640px){.tpl .long{display:none}.tpl{gap:4px 12px;padding:6px 12px}}
+.tpl select{font:inherit;color:#fff;background:#2A2927;border:1px solid #444;border-radius:4px;padding:2px 6px}
+
+.mk,.mk *{box-sizing:border-box;margin:0;padding:0}
+.mk{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow:hidden}
+.mk a{color:inherit;text-decoration:none}
+.mk ul,.mk ol{list-style:none}
+.mk button{font:inherit;color:inherit;background:none;border:0}
+.mk .ph{display:block;width:100%;background-size:cover;background-position:50% 100%;background-repeat:no-repeat}
+.mk .ic{width:20px;height:20px;display:block;flex:none}
+.mk h1,.mk h2,.mk h3,.mk h4,.mk h5{font-weight:inherit;font-size:inherit;text-wrap:balance}
+.mk em{font-style:italic}
+.mk s{opacity:.62}
+@container mk (min-width: 960px){ .mk .mob{display:none!important} }
+@container mk (max-width: 959px){ .mk .dsk{display:none!important} }
+
+.st{position:relative;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--fb)}
+.st .ann{display:flex;justify-content:center;gap:40px;padding:9px 24px;background:var(--ann-bg);color:var(--ann-fg);font-size:12.5px;letter-spacing:.02em;text-align:center}
+.st .hd{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:18px 48px;background:var(--hd-bg,var(--bg));color:var(--hd-fg,var(--ink))}
+.st .srch{display:flex;align-items:center;justify-content:space-between;gap:12px;width:360px;height:46px;padding:0 18px 0 22px;border:1.5px solid var(--srch-bd);border-radius:var(--r-srch,999px);background:var(--srch-bg,transparent);color:var(--mu);font-size:15px}
+.st .srch b{font-weight:400;color:var(--ink)}
+.st .srch u{display:inline-block;width:1.5px;height:18px;background:var(--ink);vertical-align:-3px;margin-left:1px}
+.st .srch-i{width:22px;height:22px;color:var(--srch-ic,var(--ink))}
+.st .drop{position:absolute;left:48px;top:70px;width:360px;z-index:3;background:var(--card-bg,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -18px rgba(0,0,0,.35);padding:8px;font-size:14px}
+.st .logo{justify-self:center;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.st .hd-ic{justify-self:end;display:flex;align-items:center;gap:24px}
+.st .ib{position:relative;display:block}
+.st .ib .ic{width:26px;height:26px}
+.st .ib i{position:absolute;top:-7px;right:-9px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--cnt-bg);color:var(--cnt-fg);font:700 10.5px/18px var(--fb);font-style:normal;text-align:center}
+.st .hd-m .ic{width:26px;height:26px}
+.st .cat{display:flex;justify-content:center;flex-wrap:nowrap;gap:32px;padding:18px 40px 15px;background:var(--nav-bg,var(--bg));color:var(--nav-fg,var(--ink));border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:15.5px;font-weight:500}
+.st .cat a{position:relative;white-space:nowrap}
+.st .cat .tg{position:absolute;left:50%;top:-15px;transform:translateX(-50%);padding:2px 6px;border-radius:3px;background:var(--tag1-bg);color:var(--tag1-fg);font:700 9px/1.25 var(--fb);letter-spacing:.06em}
+.st .cat .tg.t2{background:var(--tag2-bg);color:var(--tag2-fg)}
+.st .usp{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:26px 48px;background:var(--usp-bg,transparent);color:var(--usp-fg,var(--ink));border-bottom:1px solid var(--usp-line,transparent)}
+.st .usp-i{display:flex;align-items:center;gap:14px;justify-content:center}
+.st .usp-i .ic{width:30px;height:30px;color:var(--usp-ic,var(--pri))}
+.st .usp-i b{display:block;font-weight:600;font-size:14.5px;line-height:1.3}
+.st .usp-i span{display:block;font-size:12.5px;color:var(--usp-mu,var(--mu))}
+.st .sec{padding:72px 48px 0}
+.st .sh{text-align:center;margin-bottom:34px}
+.st .sh h2{font-family:var(--fh);font-size:36px;line-height:1.15;color:var(--sh-c,var(--ink))}
+.st .sh p{color:var(--mu);margin-top:8px;font-size:15px}
+.st .tabs{display:flex;justify-content:center;gap:10px;margin-top:20px}
+.st .tabs span{padding:8px 18px;border:1px solid var(--line);border-radius:var(--r-pill,999px);font-size:14px;color:var(--mu)}
+.st .tabs span.on{background:var(--btn);border-color:var(--btn);color:var(--btn-fg)}
+.st .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px}
+.st .pc{display:flex;flex-direction:column;background:var(--card-bg,transparent);border:var(--card-bd,0);border-radius:var(--r-card,0);overflow:hidden;box-shadow:var(--card-sh,none)}
+.st .pc-im{position:relative;overflow:hidden;border-radius:var(--r-img,0)}
+.st .pc-im .ph{aspect-ratio:var(--ratio,3/4)}
+.st .pc-off{position:absolute;top:12px;left:12px;padding:6px 9px;border-radius:var(--r-off,6px);background:var(--off-bg);color:var(--off-fg);font:700 12.5px/1 var(--fb);letter-spacing:.02em}
+.st .pc-wl{position:absolute;top:10px;right:10px;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--wl-bg,rgba(255,255,255,.92));color:var(--wl-fg,var(--ink))}
+.st .pc-wl.on{color:var(--sale)}
+.st .pc-wl.on .ic{fill:currentColor}
+.st .pc-qa{position:absolute;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:center;height:42px;border-radius:var(--r-btn,0);background:var(--btn);color:var(--btn-fg);font:600 13px/1 var(--fb);letter-spacing:.04em;opacity:0;transform:translateY(8px)}
+.st .pc:hover .pc-qa{opacity:1;transform:none}
+.st .pc-tk{overflow:hidden;white-space:nowrap;background:var(--tk-bg);color:var(--tk-fg);font:700 11.5px/1 var(--fb);letter-spacing:.06em;text-transform:uppercase;padding:8px 0}
+.st .tk-in{display:inline-flex;animation:tk 16s linear infinite}
+.st .pc-tk span{display:inline-flex;align-items:center;gap:7px;padding:0 14px}
+.st .pc-tk i{font-style:normal;color:var(--tk-ic,inherit)}
+@keyframes tk{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.st .tk-in{animation:none}}
+.st .pc-bd{padding:14px 14px 18px;text-align:var(--align,center)}
+.st .pc-nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:var(--nm-w,400) var(--nm-s,17px)/1.35 var(--nm-f,var(--fb));color:var(--ink)}
+.st .pc-rt{display:flex;align-items:center;justify-content:var(--jc,center);gap:6px;margin-top:6px;font-size:13.5px;color:var(--mu)}
+.st .stars{position:relative;display:inline-block;color:var(--star-off,#D9D4CC);font-size:16px;letter-spacing:1.5px;line-height:1;font-family:system-ui,'Segoe UI Symbol',sans-serif}
+.st .stars::before{content:"★★★★★";position:absolute;inset:0;width:calc(var(--v) / 5 * 100%);overflow:hidden;color:var(--star)}
+.st .pc-pr{display:flex;align-items:baseline;justify-content:var(--jc,center);gap:10px;margin-top:8px;flex-wrap:wrap}
+.st .pc-pr b{font-weight:700;font-size:17.5px;color:var(--sale)}
+.st .pc-pr s{font-size:14px;color:var(--mu)}
+.st .pc-pr em{font-style:normal;font-size:13px;font-weight:600;color:var(--pct,var(--sale))}
+.st .pc-more{justify-content:center;align-items:center;gap:10px;text-align:center;padding:24px;background:var(--more-bg,var(--btn));color:var(--more-fg,var(--btn-fg));border:0;box-shadow:none}
+.st .pm-n{font:400 64px/1 var(--fh)}
+.st .pm-t{font-size:15px;line-height:1.4;max-width:180px;opacity:.9}
+.st .pm-a{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding-bottom:3px;border-bottom:1px solid currentColor;font-weight:600;font-size:14px}
+.st .pm-a .ic{width:16px;height:16px}
+.st .more-b{display:table;margin:36px auto 0;padding:14px 32px;border:1.5px solid var(--btn);border-radius:var(--r-btn,0);color:var(--btn);font:600 14px/1 var(--fb);letter-spacing:.04em}
+.st .ft{margin-top:88px;padding:64px 48px 28px;background:var(--ft-bg);color:var(--ft-fg)}
+.st .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.25fr;gap:40px}
+.st .ft-logo{justify-self:start;margin-bottom:16px}
+.st .ft-br p{font-size:14px;line-height:1.65;color:var(--ft-mu);max-width:300px}
+.st .soc{display:flex;gap:10px;margin-top:18px}
+.st .soc span{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--ft-line)}
+.st .soc .ic{width:18px;height:18px}
+.st .ft h4{font:700 13px/1.3 var(--fb);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;color:var(--ft-h,var(--ft-fg))}
+.st .ft li{font-size:14px;line-height:2.05;color:var(--ft-mu)}
+.st .ft-bot{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:48px;padding-top:22px;border-top:1px solid var(--ft-line);font-size:12.5px;color:var(--ft-mu)}
+.st .pay{display:flex;gap:6px}
+.st .pay i{font-style:normal;font-size:11px;font-weight:600;padding:5px 8px;border-radius:4px;border:1px solid var(--ft-line);color:var(--ft-fg)}
+.st .fab{position:absolute;right:22px;top:700px;display:grid;gap:12px;z-index:4}
+.st .fab span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px -8px rgba(0,0,0,.4)}
+.st .fab .ic{width:24px;height:24px}
+.st .fab-c{background:var(--fab-bg,var(--btn));color:var(--fab-fg,var(--btn-fg))}
+.st .fab-t{background:#fff;color:#1d1d1d}
+
+@container mk (max-width: 959px){
+  .st{font-size:14px}
+  .st .ann{font-size:11px;padding:8px 12px}
+  .st .ann .x{display:none}
+  .st .hd{grid-template-columns:auto 1fr auto;gap:12px;padding:12px 16px}
+  .st .hd .logo{justify-self:start}
+  .st .hd-ic{gap:18px}
+  .st .ib .ic,.st .hd-m .ic{width:24px;height:24px}
+  .st .msrch{width:auto;height:42px;margin:0 16px 12px;font-size:14px}
+  .st .cat{justify-content:flex-start;gap:8px;overflow:hidden;padding:16px 16px 12px;font-size:13px}
+  .st .cat a{padding:7px 13px;border:1px solid var(--line);border-radius:999px}
+  .st .cat .tg{top:-9px;font-size:8px;padding:1px 5px}
+  .st .usp{grid-template-columns:1fr 1fr;gap:14px 10px;padding:18px 16px}
+  .st .usp-i{justify-content:flex-start;gap:10px}
+  .st .usp-i .ic{width:24px;height:24px}
+  .st .usp-i b{font-size:13px}
+  .st .usp-i span{font-size:11.5px}
+  .st .sec{padding:44px 16px 0}
+  .st .sh{margin-bottom:20px}
+  .st .sh h2{font-size:26px}
+  .st .sh p{font-size:13.5px}
+  .st .tabs{justify-content:flex-start;overflow:hidden;gap:8px}
+  .st .tabs span{padding:7px 14px;font-size:13px;white-space:nowrap}
+  .st .grid{grid-template-columns:1fr 1fr;gap:14px 12px}
+  .st .pc-off{top:8px;left:8px;font-size:11px;padding:5px 7px}
+  .st .pc-wl{top:6px;right:6px;width:30px;height:30px}
+  .st .pc-wl .ic{width:17px;height:17px}
+  .st .pc-tk{font-size:9.5px;padding:6px 0}
+  .st .pc-bd{padding:10px 8px 12px}
+  .st .pc-nm{font-size:13.5px}
+  .st .pc-rt{font-size:12px;gap:4px}
+  .st .stars{font-size:13px;letter-spacing:.5px}
+  .st .pc-pr{gap:6px}
+  .st .pc-pr b{font-size:15px}
+  .st .pc-pr s{font-size:12px}
+  .st .pc-pr em{font-size:11.5px}
+  .st .pc-qa{display:none}
+  .st .more-b{margin-top:24px;width:100%;text-align:center}
+  .st .ft{margin-top:56px;padding:40px 16px 96px}
+  .st .ft-top{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .st .ft-br{grid-column:1/-1}
+  .st .ft-bot{flex-direction:column;align-items:flex-start;gap:14px}
+  .st .pay{flex-wrap:wrap}
+  .st .pm-n{font-size:40px}.st .pm-t{font-size:12.5px}.st .pc-more{padding:14px}
+  .st .fab{right:14px;top:520px}
+  .st .fab span{width:46px;height:46px}
+}
+
+.m02{--bg:#FBF4E8;--ink:#2B0B13;--mu:#6B4A50;--line:#E3CFA4;--pri:#5E1224;--fb:'Source Sans 3',system-ui,sans-serif;--fh:'Playfair Display',Georgia,serif;
+--ann-bg:#4A0E1C;--ann-fg:#E2C688;--hd-bg:#FBF4E8;--srch-bd:#C4A15A;--srch-bg:#FFFDF8;--srch-ic:#5E1224;--cnt-bg:#C4A15A;--cnt-fg:#2B0B13;
+--nav-bg:#5E1224;--nav-fg:#F6EAD3;--tag1-bg:#C4A15A;--tag1-fg:#2B0B13;--tag2-bg:#F6EAD3;--tag2-fg:#5E1224;--usp-bg:#F3E4CB;--usp-ic:#8C6A2E;
+--card-bg:#FFFDF8;--card-bd:1px solid #D9BE85;--r-card:0;--off-bg:#C4A15A;--off-fg:#2B0B13;--r-off:0;--wl-bg:#FBF4E8;--wl-fg:#5E1224;
+--tk-bg:#5E1224;--tk-fg:#F1DFB4;--tk-ic:#C4A15A;--nm-f:'Playfair Display',serif;--nm-s:17.5px;--nm-w:400;--star:#C4A15A;--star-off:#E8D9B8;--sale:#5E1224;
+--btn:#5E1224;--btn-fg:#FBF4E8;--r-btn:0;--ft-bg:#4A0E1C;--ft-fg:#F6EAD3;--ft-mu:#D9C3A3;--ft-line:rgba(196,161,90,.35);--ft-h:#C4A15A;--fab-bg:#5E1224}
+.m02 .ann{letter-spacing:.12em;text-transform:uppercase;font-size:11.5px}
+.m02 .hd{padding:20px 48px}
+.m02 .lg{display:flex;flex-direction:column;align-items:center;gap:2px}
+.m02 .lg svg{width:40px;height:20px}
+.m02 .lg b{font:600 36px/1 'Playfair Display',serif;color:#5E1224;letter-spacing:.01em}
+.m02 .lg small{font:600 9.5px/1.4 'Source Sans 3';letter-spacing:.3em;text-transform:uppercase;color:#8C6A2E}
+.m02 .cat{border-top:1px solid #C4A15A;border-bottom:1px solid #C4A15A;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:20px 40px 16px;gap:34px;box-shadow:inset 0 -4px 0 #4A0E1C}
+.m02 .cat .tg{top:-13px}
+.m02 .hr{position:relative;background:linear-gradient(#5E1224 0 70%,#FBF4E8 70%);padding:56px 48px 0;text-align:center}
+.m02 .eb,.m02 .eb2{display:flex;align-items:center;justify-content:center;gap:14px;font:600 12px/1 'Source Sans 3';letter-spacing:.24em;text-transform:uppercase;color:#C4A15A}
+.m02 .eb i{display:block;width:44px;height:1px;background:#C4A15A}
+.m02 .hr h1{font:400 64px/1.06 'Playfair Display',serif;color:#F6EAD3;margin-top:20px}
+.m02 .hr h1 em{color:#E2C688}
+.m02 .hr .sub{font-size:17px;line-height:1.6;color:#E8D3C8;max-width:620px;margin:18px auto 0}
+.m02 .ctas{display:flex;gap:14px;justify-content:center;margin-top:28px}
+.m02 .bg,.m02 .bo{display:inline-flex;align-items:center;height:52px;padding:0 30px;font:600 13px/1 'Source Sans 3';letter-spacing:.14em;text-transform:uppercase}
+.m02 .bg{background:#C4A15A;color:#2B0B13;outline:1px solid #C4A15A;outline-offset:3px}
+.m02 .bo{border:1px solid #F6EAD3;color:#F6EAD3}
+.m02 .tri{display:grid;grid-template-columns:300px 380px 300px;justify-content:center;align-items:end;gap:28px;margin-top:48px}
+.m02 .fr{position:relative;padding:8px;background:#FFFDF8;border:1px solid #C4A15A}
+.m02 .fr::after{content:"";position:absolute;inset:4px;border:1px solid rgba(196,161,90,.55);pointer-events:none}
+.m02 .tri .ph{aspect-ratio:3/4}
+.m02 .dots{display:flex;gap:8px;justify-content:center;margin-top:22px}
+.m02 .dots i{width:7px;height:7px;transform:rotate(45deg);background:#E3CFA4}
+.m02 .dots i.on{background:#5E1224}
+.m02 .usp{margin-top:48px;border-block:1px solid #E3CFA4}
+.m02 .usp-i b{font-family:'Playfair Display',serif;font-weight:400;font-size:16px}
+.m02 .sec{padding:84px 48px 0}
+.m02 .sh .orn{display:block;width:120px;height:14px;margin:0 auto 14px}
+.m02 .sh h2{font:400 42px/1.1 'Playfair Display',serif;color:#2B0B13}
+.m02 .sh p{font-style:italic;font-family:'Playfair Display',serif}
+.m02 .rs{display:inline-flex;gap:8px;align-items:center;font-style:normal;font-family:'Source Sans 3'}
+.m02 .tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;text-align:center}
+.m02 .ti{aspect-ratio:3/4}
+.m02 .tiles b{display:block;font:400 22px/1.2 'Playfair Display',serif;margin-top:16px}
+.m02 .tiles span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8C6A2E}
+.m02 .pc{padding:10px}
+.m02 .pc-im::after{content:"";position:absolute;inset:6px;border:1px solid rgba(196,161,90,.6);pointer-events:none}
+.m02 .pc-off{clip-path:polygon(0 0,100% 0,90% 50%,100% 100%,0 100%);padding:6px 16px 6px 9px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;top:16px;left:0}
+.m02 .pc-tk{font-size:10.5px;letter-spacing:.16em}
+.m02 .pc-bd{padding:14px 6px 6px}
+.m02 .pc-more{--more-bg:#5E1224;--more-fg:#F6EAD3;outline:1px solid #C4A15A;outline-offset:-8px}
+.m02 .pm-n{color:#E2C688}
+.m02 .pc-add{display:flex;justify-content:center;align-items:center;height:42px;margin-top:14px;border:1px solid #5E1224;color:#5E1224;font:600 12px/1 'Source Sans 3';letter-spacing:.14em;text-transform:uppercase}
+.m02 .g-best{background:#5E1224;margin-top:88px;padding-bottom:84px}
+.m02 .g-best .sh h2{color:#F6EAD3}.m02 .g-best .sh p{color:#E2C688}
+.m02 .g-best .tabs span{border-color:rgba(196,161,90,.5);color:#E8D3C8}
+.m02 .g-best .tabs span.on{background:#C4A15A;border-color:#C4A15A;color:#2B0B13}
+.m02 .appt{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:88px;padding:84px 96px;background:#4A0E1C;color:#F6EAD3}
+.m02 .ap-i{aspect-ratio:4/5}
+.m02 .fr.big{background:#4A0E1C}
+.m02 .cn{position:absolute;width:26px;height:26px;border:2px solid #C4A15A}
+.m02 .cn.tl{top:-8px;left:-8px;border-right:0;border-bottom:0}.m02 .cn.tr{top:-8px;right:-8px;border-left:0;border-bottom:0}.m02 .cn.bl{bottom:-8px;left:-8px;border-right:0;border-top:0}.m02 .cn.br{bottom:-8px;right:-8px;border-left:0;border-top:0}
+.m02 .eb2{justify-content:flex-start}
+.m02 .ap-t h2{font:400 48px/1.08 'Playfair Display',serif;margin-top:16px}
+.m02 .ap-t > p{font-size:16.5px;line-height:1.65;color:#E8D3C8;margin-top:16px}
+.m02 .ap-t ul{margin-top:22px;display:grid;gap:10px}
+.m02 .ap-t li{padding-left:24px;position:relative;font-size:15.5px}
+.m02 .ap-t li::before{content:"✦";position:absolute;left:0;color:#C4A15A}
+.m02 .ap-t .ctas{justify-content:flex-start;align-items:center}
+.m02 .tx{color:#E2C688;border-bottom:1px solid currentColor;padding-bottom:3px;font-size:14px;letter-spacing:.08em}
+.m02 .pil{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
+.m02 .pi{display:grid;place-items:center;width:84px;height:84px;margin:0 auto 18px;border:1px solid #C4A15A;border-radius:50%;color:#8C6A2E}
+.m02 .pi .ic{width:38px;height:38px}
+.m02 .pil h3{font:400 24px/1.2 'Playfair Display',serif}
+.m02 .pil p{color:#6B4A50;margin-top:8px;font-size:15.5px;max-width:300px;margin-inline:auto}
+.m02 .rv-g{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.m02 .rc{position:relative;padding:34px 30px;background:#FFFDF8;border:1px solid #D9BE85;text-align:center}
+.m02 .rc::after{content:"";position:absolute;inset:6px;border:1px solid rgba(196,161,90,.45);pointer-events:none}
+.m02 .rc p{font:italic 400 18px/1.55 'Playfair Display',serif;margin:16px 0}
+.m02 .rc b{display:block;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.m02 .rc span{font-size:13px;color:#6B4A50}
+.m02 .circ-b{margin:88px 48px 0;padding:10px;border:1px solid #C4A15A;background:#F3E4CB}
+.m02 .cb-in{border:1px solid #C4A15A;padding:44px;text-align:center}
+.m02 .cb-in h3{font:400 36px/1.1 'Playfair Display',serif}
+.m02 .cb-in p{color:#6B4A50;margin-top:8px}
+.m02 .cb-in form{display:flex;width:520px;margin:24px auto 0;border:1px solid #C4A15A;background:#FFFDF8}
+.m02 .cb-in form span{flex:1;padding:16px 18px;text-align:left;color:#6B4A50}
+.m02 .cb-in form b{display:grid;place-items:center;padding:0 34px;background:#5E1224;color:#FBF4E8;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.m02 .ft .lg{align-items:flex-start}.m02 .ft .lg b{color:#F6EAD3}.m02 .ft .lg small{color:#C4A15A}
+@container mk (max-width: 959px){
+  .m02 .ann{font-size:9.5px;letter-spacing:.08em}
+  .m02 .hd{padding:12px 16px}.m02 .lg{align-items:flex-start}.m02 .lg svg,.m02 .lg small{display:none}.m02 .lg b{font-size:28px}
+  .m02 .cat{font-size:11px;letter-spacing:.06em;box-shadow:none}
+  .m02 .cat a{border-color:rgba(196,161,90,.5)}
+  .m02 .hr{padding:36px 16px 0;background:linear-gradient(#5E1224 0 78%,#FBF4E8 78%)}
+  .m02 .eb{font-size:10px;letter-spacing:.16em}.m02 .eb i{width:20px}
+  .m02 .hr h1{font-size:36px}.m02 .hr .sub{font-size:14.5px}
+  .m02 .ctas{flex-direction:column;align-items:stretch}.m02 .bg,.m02 .bo{justify-content:center}
+  .m02 .tri{grid-template-columns:1fr;justify-items:center;margin-top:32px}.m02 .tri .fr:not(.c){display:none}.m02 .tri .fr.c{width:78%}
+  .m02 .sec{padding:56px 16px 0}.m02 .sh h2{font-size:30px}
+  .m02 .tiles{grid-template-columns:1fr 1fr;gap:16px}.m02 .tiles b{font-size:17px}
+  .m02 .pc{padding:6px}.m02 .pc-more{--more-bg:#5E1224;--more-fg:#F6EAD3;outline:1px solid #C4A15A;outline-offset:-8px}
+.m02 .pm-n{color:#E2C688}
+.m02 .pc-add{height:36px;font-size:10.5px;margin-top:10px}
+  .m02 .g-best{margin-top:56px;padding-bottom:56px}
+  .m02 .appt{grid-template-columns:1fr;gap:36px;padding:48px 24px;margin-top:56px}.m02 .ap-t h2{font-size:32px}
+  .m02 .pil{grid-template-columns:1fr;gap:28px}
+  .m02 .rv-g{grid-template-columns:1fr}
+  .m02 .circ-b{margin:56px 16px 0}.m02 .cb-in{padding:28px 16px}.m02 .cb-in h3{font-size:28px}.m02 .cb-in form{width:auto;flex-direction:column}.m02 .cb-in form b{padding:14px}
+}
+@container mk (min-width: 641px) and (max-width: 959px){
+.mk .st .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.m01 .hm{max-width:620px;margin-inline:auto}.m01 .sto-i{max-width:480px}
+.m02 .tri .fr.c{width:52%}.m02 .ap-i{max-width:480px;margin-inline:auto}
+.m03 .hx-v{max-width:560px;margin-inline:auto}.m03 .nd-v{max-width:520px}
+.m04 .sp-i{aspect-ratio:5/4}.m04 .fd-i{max-width:480px}
+.m05 .fh-w{width:52%}
+.m06 .hl-i{aspect-ratio:4/3}.m06 .mw-i{max-width:520px}
+.m07 .hb-b{aspect-ratio:4/3}
+.m08 .cover{width:60%;justify-self:center}.m08 .sp-i{aspect-ratio:4/3}
+.m09 .hc-i{aspect-ratio:4/3}.m09 .sl-i{max-width:520px}
+.m10 .sp-f{width:56%;justify-self:center}.m10 .hs-i{max-width:520px}
+}
+.i-ph-p4{background-image:url("../assets/photos/p4.webp")}
+.i-ph-p7{background-image:url("../assets/photos/p7.webp")}
+.i-ph-p5{background-image:url("../assets/photos/p5.webp")}
+.i-ph-p1{background-image:url("../assets/photos/p1.webp")}
+.i-ph-p3{background-image:url("../assets/photos/p3.webp")}
+.i-ph-p6{background-image:url("../assets/photos/p6.webp")}
+.i-ph-p2{background-image:url("../assets/photos/p2.webp")}
+</style>
+</head>
+<body>
+<div class="tpl"><span>Template preview: <b>02 Darbar</b><span class="long"> (Royal Burgundy). The brand, prices, offers and reviews are samples.</span></span><a href="../">All 10 templates</a><a href="../directions.html#c02">Design spec</a><label>Switch: <select id="sw" aria-label="Switch template"><option value="">Darbar</option><option value="../01-the-quiet-drape/">01 The Quiet Drape</option><option value="../03-mitti-modern/">03 Mitti Modern</option><option value="../04-gulabi-hour/">04 Gulabi Hour</option><option value="../05-panna-heritage/">05 Panna Heritage</option><option value="../06-neel-and-kora/">06 Neel &amp; Kora</option><option value="../07-utsav/">07 Utsav</option><option value="../08-the-jamun-issue/">08 The Jamun Issue</option><option value="../09-tulsi-garden/">09 Tulsi Garden</option><option value="../10-midnight-zari/">10 Midnight Zari</option></select></label></div>
+<div class="cq"><div class="mk m02"><div class="st">
+<div class="ann"><span>Silk Mark certified silks ✦ Real zari, tested</span><span class="x">Free insured shipping on every order</span><span class="x">Book a bridal video appointment</span></div>
+<header class="hd"><button class="hd-m mob" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="srch dsk"><span class="srch-t">Search Kanjivaram, Banarasi, bridal…</span><svg class="ic srch-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></div>
+<a class="logo"><span class="lg"><svg viewBox="0 0 40 20" aria-hidden="true"><path d="M4 18L9 6L16 13L20 2L24 13L31 6L36 18Z" fill="none" stroke="#C4A15A" stroke-width="1.6" stroke-linejoin="round"/></svg><b>Taana</b><small>Silks for the wedding</small></span></a>
+<div class="hd-ic"><a class="ib dsk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.8 20a7.2 7.2 0 0 1 14.4 0"/></svg></a><a class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg><i>3</i></a><a class="ib"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 8.5h13l-1 11.5h-11z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg><i>1</i></a></div></header>
+<div class="srch mob msrch"><span class="srch-t">Search Kanjivaram, Banarasi, bridal…</span><svg class="ic srch-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></div>
+<nav class="cat"><a>Bridal<span class="tg">NEW</span></a><a>Kanjivaram</a><a>Banarasi</a><a>Tissue Silk</a><a>Reception &amp; Sangeet</a><a>Mother of the Bride</a><a>Trousseau Gifts<span class="tg t2">HOT</span></a><a>Our Heritage</a></nav>
+<section class="hr"><div class="hr-t"><p class="eb"><i></i>The Wedding Edit · 2026–27<i></i></p><h1>Woven for the Wedding,<br><em>Kept</em> for Generations</h1><p class="sub">Pure Kanjivaram and Banarasi silks with real zari, chosen for brides, mothers of the bride and every celebration in between.</p><div class="ctas"><a class="bg">Shop the Wedding Edit</a><a class="bo">Book a Bridal Appointment</a></div></div>
+<div class="tri"><div class="fr"><div class="ph i-ph-p3" style="background-position:50% 30%"></div></div><div class="fr c"><div class="ph i-ph-p4" style="background-position:50% 24%"></div></div><div class="fr"><div class="ph i-ph-p1" style="background-position:50% 40%"></div></div></div><div class="dots"><i class="on"></i><i></i><i></i></div></section>
+<div class="usp"><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.5" r="5.8"/><path d="M8.8 14.3L7.5 20.5l4.5-2 4.5 2-1.3-6.2"/><path d="M9.6 9.6l1.7 1.7 3.2-3.4"/></svg><p><b>Silk Mark certified</b><span>Every pure silk, tagged</span></p></div><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M8.5 4v16M15.5 4v16"/><path d="M8.5 8h7M8.5 11h7M8.5 14h7M8.5 17h7"/></svg><p><b>Real zari, tested</b><span>Purity stated on bridal pieces</span></p></div><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17" r="1.7"/><circle cx="17" cy="17" r="1.7"/></svg><p><b>Free insured shipping</b><span>Across India, 3–6 days</span></p></div><div class="usp-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h3l1.5 4-2 1.2a11 11 0 0 0 6.8 6.8l1.2-2 4 1.5v3A2 2 0 0 1 18.5 20 15.5 15.5 0 0 1 4 5.5a2 2 0 0 1 2-2z"/></svg><p><b>Bridal appointments</b><span>In studio or on video</span></p></div></div>
+<section class="sec cats"><div class="sh"><svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7H48M72 7H120" stroke="#C4A15A" stroke-width="1"/><path d="M60 1L66 7L60 13L54 7Z" fill="#C4A15A"/><circle cx="50" cy="7" r="1.6" fill="#C4A15A"/><circle cx="70" cy="7" r="1.6" fill="#C4A15A"/></svg><h2>Curated for the Celebration</h2><p>Four ways to begin your trousseau</p></div><div class="tiles"><a><div class="fr"><div class="ph i-ph-p4 ti" style="background-position:50% 22%"></div></div><b>Bridal Kanjivaram</b><span>Explore</span></a><a><div class="fr"><div class="ph i-ph-p2 ti" style="background-position:50% 34%"></div></div><b>Banarasi Silk</b><span>Explore</span></a><a><div class="fr"><div class="ph i-ph-p7 ti" style="background-position:42% 58%"></div></div><b>Reception &amp; Sangeet</b><span>Explore</span></a><a><div class="fr"><div class="ph i-ph-p5 ti" style="background-position:50% 14%"></div></div><b>Mother of the Bride</b><span>Explore</span></a></div></section>
+<section class="sec g-new"><div class="sh"><svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7H48M72 7H120" stroke="#C4A15A" stroke-width="1"/><path d="M60 1L66 7L60 13L54 7Z" fill="#C4A15A"/><circle cx="50" cy="7" r="1.6" fill="#C4A15A"/><circle cx="70" cy="7" r="1.6" fill="#C4A15A"/></svg><h2>The Wedding Edit</h2><p>New bridal silks, added every week of the season</p></div>
+<div class="grid"><a class="pc"><div class="pc-im"><div class="ph i-ph-p4" style="background-position:50% 22%"></div><span class="pc-off pc-lab">Silk Mark</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Wine Kanjivaram, Gold Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(38)</span></p>
+<p class="pc-pr"><b>₹42,000</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p1" style="background-position:50% 45%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Rani Pink Bridal Banarasi, Zari Jaal</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(44)</span></p>
+<p class="pc-pr"><b>₹30,600</b><s>₹34,000</s></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p2" style="background-position:50% 40%"></div><span class="pc-off pc-lab">Bridal</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Sindoor Banarasi Katan, Kadhwa Pallu</p><p class="pc-rt"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><span>(21)</span></p>
+<p class="pc-pr"><b>₹38,500</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p5" style="background-position:50% 10%"></div><span class="pc-off pc-lab">Silk Mark</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Kanjivaram, Annam Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(26)</span></p>
+<p class="pc-pr"><b>₹36,750</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p7" style="background-position:44% 62%"></div><span class="pc-off pc-lab">Heirloom</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Lilac Tissue, Hand-Embroidered Border</p><p class="pc-rt"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><span>(8)</span></p>
+<p class="pc-pr"><b>₹1,24,500</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p3" style="background-position:50% 35%"></div><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Peacock Teal Silk, Silver Zari</p><p class="pc-rt"><span class="stars" style="--v:4.7" role="img" aria-label="Rated 4.7 out of 5">★★★★★</span><span>(19)</span></p>
+<p class="pc-pr"><b>₹24,900</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p6" style="background-position:40% 50%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Royal Blue Soft Silk, Gold Zari Border</p><p class="pc-rt"><span class="stars" style="--v:4.6" role="img" aria-label="Rated 4.6 out of 5">★★★★★</span><span>(33)</span></p>
+<p class="pc-pr"><b>₹17,820</b><s>₹19,800</s></p><span class="pc-add">Add to Bag</span></div></a><a class="pc pc-more"><span class="pm-n">32</span><span class="pm-t">new bridal silks this season</span><span class="pm-a">See them all <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg></span></a></div><a class="more-b">View the Wedding Edit</a></section>
+<section class="appt"><div class="fr big"><div class="ph i-ph-p7 ap-i" style="background-position:44% 56%"></div><span class="cn tl"></span><span class="cn tr"></span><span class="cn bl"></span><span class="cn br"></span></div>
+<div class="ap-t"><p class="eb2">By appointment</p><h2>Your Trousseau,<br>Curated in Person</h2><p>Sit with our bridal stylist for 45 minutes, in our studio or on a video call, and see every saree in natural light before you decide.</p>
+<ul><li>45-minute session with a bridal stylist</li><li>In the studio or on video, in Hindi, English or Tamil</li><li>Blouse and fall consultation included</li></ul><div class="ctas"><a class="bg">Book an Appointment</a><a class="tx">Or WhatsApp us</a></div></div></section>
+<section class="sec g-best"><div class="sh"><svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7H48M72 7H120" stroke="#C4A15A" stroke-width="1"/><path d="M60 1L66 7L60 13L54 7Z" fill="#C4A15A"/><circle cx="50" cy="7" r="1.6" fill="#C4A15A"/><circle cx="70" cy="7" r="1.6" fill="#C4A15A"/></svg><h2>Most Coveted</h2><p>Chosen by our brides this season</p><div class="tabs"><span class="on">All</span><span class="">Kanjivaram</span><span class="">Banarasi</span><span class="">Tissue</span></div></div>
+<div class="grid"><a class="pc"><div class="pc-im"><div class="ph i-ph-p4" style="background-position:50% 22%"></div><span class="pc-off pc-lab">Silk Mark</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Wine Kanjivaram, Gold Border</p><p class="pc-rt"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span><span>(38)</span></p>
+<p class="pc-pr"><b>₹42,000</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p2" style="background-position:50% 40%"></div><span class="pc-off pc-lab">Bridal</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Sindoor Banarasi Katan, Kadhwa Pallu</p><p class="pc-rt"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><span>(21)</span></p>
+<p class="pc-pr"><b>₹38,500</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p7" style="background-position:44% 62%"></div><span class="pc-off pc-lab">Heirloom</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Lilac Tissue, Hand-Embroidered Border</p><p class="pc-rt"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><span>(8)</span></p>
+<p class="pc-pr"><b>₹1,24,500</b></p><span class="pc-add">Add to Bag</span></div></a><a class="pc"><div class="pc-im"><div class="ph i-ph-p1" style="background-position:50% 45%"></div><span class="pc-off">-10%</span><span class="pc-wl"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5s-7-4.3-7-9.6A3.9 3.9 0 0 1 12 7.6a3.9 3.9 0 0 1 7 2.3c0 5.3-7 9.6-7 9.6z"/></svg></span></div><div class="pc-tk" aria-label="Free blouse stitching on bridal orders"><div class="tk-in"><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span><span><i>✦</i>Free blouse stitching on bridal orders</span></div></div>
+<div class="pc-bd"><p class="pc-nm">Rani Pink Bridal Banarasi, Zari Jaal</p><p class="pc-rt"><span class="stars" style="--v:4.8" role="img" aria-label="Rated 4.8 out of 5">★★★★★</span><span>(44)</span></p>
+<p class="pc-pr"><b>₹30,600</b><s>₹34,000</s></p><span class="pc-add">Add to Bag</span></div></a></div></section>
+<section class="sec prom"><div class="sh"><svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7H48M72 7H120" stroke="#C4A15A" stroke-width="1"/><path d="M60 1L66 7L60 13L54 7Z" fill="#C4A15A"/><circle cx="50" cy="7" r="1.6" fill="#C4A15A"/><circle cx="70" cy="7" r="1.6" fill="#C4A15A"/></svg><h2>Our Promise to Every Bride</h2><p>Three things we check before a saree reaches you</p></div><div class="pil"><div><span class="pi"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.5" r="5.8"/><path d="M8.8 14.3L7.5 20.5l4.5-2 4.5 2-1.3-6.2"/><path d="M9.6 9.6l1.7 1.7 3.2-3.4"/></svg></span><h3>Pure Silk, Certified</h3><p>Every pure silk saree carries a Silk Mark tag you can verify.</p></div><div><span class="pi"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M8.5 4v16M15.5 4v16"/><path d="M8.5 8h7M8.5 11h7M8.5 14h7M8.5 17h7"/></svg></span><h3>Real Zari, Tested</h3><p>Zari purity is tested and stated on each bridal piece.</p></div><div><span class="pi"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.8L12 3.5l8.5 4.3v8.4L12 20.5l-8.5-4.3z"/><path d="M3.5 7.8L12 12l8.5-4.2M12 12v8.5"/></svg></span><h3>Made to Be Heirlooms</h3><p>Shipped in a muslin bag with a care guide for decades of wear.</p></div></div></section>
+<section class="sec rv"><div class="sh"><svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7H48M72 7H120" stroke="#C4A15A" stroke-width="1"/><path d="M60 1L66 7L60 13L54 7Z" fill="#C4A15A"/><circle cx="50" cy="7" r="1.6" fill="#C4A15A"/><circle cx="70" cy="7" r="1.6" fill="#C4A15A"/></svg><h2>Words from Our Brides</h2><p><span class="rs"><span class="stars" style="--v:4.9" role="img" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 out of 5 from 2,140 reviews</span></p></div><div class="rv-g"><div class="rc"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><p>“Every guest asked about the pallu. It photographed like a painting and felt lighter than it looked.”</p><b>Meenakshi R.</b><span>Chennai · Verified bride</span></div><div class="rc"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><p>“The video appointment saved me three trips to Kanchipuram. They showed each saree in daylight by the window.”</p><b>Ananya Iyer</b><span>Bengaluru · Verified bride</span></div><div class="rc"><span class="stars" style="--v:5" role="img" aria-label="Rated 5 out of 5">★★★★★</span><p>“My mother's saree and mine were matched perfectly. The zari certificate came in the box.”</p><b>Priya Sharma</b><span>Jaipur · Verified bride</span></div></div></section>
+<section class="circ-b"><div class="cb-in"><h3>Join the Darbar Circle</h3><p>Early access to bridal launches, trunk shows and private sales.</p><form><span>Your email address</span><b>Join</b></form></div></section>
+<footer class="ft"><div class="ft-top"><div class="ft-br"><div class="logo ft-logo"><span class="lg"><b>Taana</b><small>Silks for the wedding</small></span></div><p>Kanjivaram and Banarasi silks with real zari, for brides and the families who dress them.</p><div class="soc"><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="currentColor"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.8c0-.9.4-1.5 1.6-1.5h1.5V4.6c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H8.5v3h2.5V21"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3.5"/><path d="M10.5 9.5l4 2.5-4 2.5z"/></svg></span><span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10.6 16.8l1.6-6.3M10.7 13.7c.4.6 1 .9 1.8.9 1.9 0 3.1-1.7 3.1-3.8 0-1.9-1.5-3.3-3.6-3.3-2.4 0-3.8 1.7-3.8 3.5 0 .7.3 1.4.8 1.7"/></svg></span></div></div>
+<div class="ft-c"><h4>Shop</h4><ul><li>Bridal</li><li>Kanjivaram</li><li>Banarasi</li><li>Tissue Silk</li><li>Trousseau Gifts</li></ul></div><div class="ft-c"><h4>Customer care</h4><ul><li>Bridal appointments</li><li>Shipping &amp; insurance</li><li>Exchanges</li><li>Silk Mark &amp; zari</li><li>Saree care</li></ul></div><div class="ft-c"><h4>The house</h4><ul><li>Our heritage</li><li>Weaver families</li><li>Press</li><li>Careers</li></ul></div>
+<div class="ft-c"><h4>Visit us</h4><ul><li>WhatsApp +91 XXXXX XXXXX</li><li>bridal@your-store.in</li><li>Mon–Sun, 10 am – 8 pm</li><li>Studio address, City</li></ul></div></div>
+<div class="ft-bot"><span>© 2026 Taana · All prices in INR, inclusive of GST</span><span class="pay"><i>UPI</i><i>Visa</i><i>Mastercard</i><i>RuPay</i><i>Net banking</i><i>COD</i></span></div></footer>
+<div class="fab" aria-hidden="true"><span class="fab-c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.4 18.5z"/></svg></span><span class="fab-t"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12.5l5-5 5 5M7 18l5-5 5 5"/></svg></span></div>
+</div></div></div>
+<script>if(/[?&]shot/.test(location.search)){var tb=document.querySelector('.tpl');tb.parentNode.removeChild(tb);}(function(){var cq=document.querySelector('.cq');function fit(){var w=document.documentElement.clientWidth;if(w>=960&&w<1280){cq.style.width='1280px';cq.style.maxWidth='none';cq.style.zoom=(w/1280).toFixed(4);}else{cq.style.width='';cq.style.maxWidth='';cq.style.zoom='';}}fit();addEventListener('resize',fit);})();document.getElementById('sw').addEventListener('change',function(e){if(e.target.value)location.href=e.target.value;});</script>
+</body>
+</html>
